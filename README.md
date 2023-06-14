@@ -8,9 +8,23 @@
 
 > Projects 栏目是项目的开发进度，可以通过此栏目查看具体任务的开发进度。
 
-**中版本规划**
+## 下载
+
+软件官网：[aqzscn.cn](https://aqzscn.cn/)
+
+安卓临时下载地址集合：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
+
+iOS 可直接在 AppStore 搜索 **音流** 下载正式版，也可通过 [TestFlight](https://testflight.apple.com/join/svM990B5) 下载测试版。
+
+> 目前仅在中国大陆应用商店提供，支持多语言后会在其他区域提供。
+
+## 中版本规划
 
 1. 1.0.x 开发重点：修复特别影响使用体验的 BUG。
 2. 1.1.x 开发重点：适配 Pad 端、支持 Jellyfin API。
 3. 1.2.x 开发重点：支持平台特有功能，如 CarPlay、桌面小组件等。
 4. 1.3.x 开发重点：适配桌面平台。
+
+## 特别鸣谢
+
+特别感谢[小众软件](https://www.appinn.com/)对本软件的推荐~
