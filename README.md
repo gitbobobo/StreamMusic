@@ -14,9 +14,9 @@
 
 安卓临时下载地址集合：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
 
-iOS 可直接在 AppStore 搜索 **音流** 下载正式版，也可通过 [TestFlight](https://testflight.apple.com/join/svM990B5) 下载测试版。
+iOS ~~可直接在 AppStore 搜索 **音流** 下载正式版~~，也可通过 [TestFlight](https://testflight.apple.com/join/svM990B5) 下载测试版。
 
-> 目前仅在中国大陆应用商店提供，支持多语言后会在其他区域提供。
+> ~~目前仅在中国大陆应用商店提供，支持多语言后会在其他区域提供~~。
 
 ## 中版本规划
 
