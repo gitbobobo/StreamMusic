@@ -23,6 +23,10 @@ iOS ~~可直接在 AppStore 搜索 **音流** 下载正式版~~，也可通过 [
 1. 1.2.x 开发重点：支持平台特有功能，如 CarPlay、桌面小组件等。
 2. 1.3.x 开发重点：适配桌面平台。
 
+## 相关资源
+
+- [LrcApi](https://github.com/HisAtri/LrcApi)
+
 ## 特别鸣谢
 
 特别感谢[小众软件](https://www.appinn.com/)对本软件的推荐~
