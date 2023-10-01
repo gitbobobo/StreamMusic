@@ -1,6 +1,6 @@
 # StreamMusic（音流）
 
-支持 Android、iOS 平台的 Subsonic/Navidrome/Jellyfin/Emby 客户端。
+支持 Android、iOS 平台的 Subsonic/Navidrome/Jellyfin/Emby/AudioStation 客户端。
 
 本项目非开源项目。
 
