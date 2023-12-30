@@ -44,6 +44,12 @@ iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F
 
 > 等待确定实现方式。
 
+## 日志查看方式
+
+反馈建议页面，不要选择类型，连续点击`通过邮件发送` 5 次，点击右上角图标即可查看最新日志。
+
+> 应用启动后会自动清理两周前的日志。
+
 ## 相关资源
 
 - [LrcApi](https://github.com/HisAtri/LrcApi)
