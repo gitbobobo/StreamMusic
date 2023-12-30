@@ -1,6 +1,6 @@
 # StreamMusic（音流）
 
-支持 Android、iOS、MacOS 平台的 Subsonic/Navidrome/Jellyfin/Emby/AudioStation 客户端。
+支持 Android、iOS、MacOS、Windows 平台的 Subsonic/Navidrome/Jellyfin/Emby/AudioStation 客户端。
 
 本项目非开源项目。
 
@@ -12,9 +12,9 @@
 
 软件官网：[aqzscn.cn](https://aqzscn.cn/)
 
-安卓、Mac OS下载地址：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
+安卓、MacOS、Windows 下载地址：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
 
-iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496)** 下载正式版。
+iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496)** 或 `Stream Music` 下载正式版。
 
 ## 平台适配
 
@@ -30,7 +30,7 @@ iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F
 
 ### Windows 适配计划
 
-- [ ] 窗口标题修改？
+- [x] 窗口标题修改
 - [ ] 媒体信息通知
 - [ ] 桌面歌词
 - [ ] 最小化到系统托盘
