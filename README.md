@@ -50,10 +50,6 @@ iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F
 
 > 应用启动后会自动清理两周前的日志。
 
-## 相关资源
-
-- [LrcApi](https://github.com/HisAtri/LrcApi)
-
 ## 特别鸣谢
 
 特别感谢[小众软件](https://www.appinn.com/)对本软件的推荐~
