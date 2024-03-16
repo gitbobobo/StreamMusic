@@ -1,0 +1,11 @@
+{
+  "label": "版本列表",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "包含历史版本更新说明和安装包下载地址。"
+  },
+  "customProps": {
+    "reversed": true
+  }
+}

@@ -4,13 +4,13 @@
 
 本项目非开源项目。
 
-如果在使用中发现问题或有任何建议，可以先看下 **Projects** 或 **Issues** 栏目下是否已存在类似问题，不存在的话可以在 **Issues** 栏目下新建问题，尽量描述清楚问题出现的步骤，有条件请提供截图。
-
-> 可通过 Projects 栏目查看具体任务的开发进度。
+如果在使用中发现问题或有任何建议，可以在 **Issues** 栏目下新建问题，尽量描述清楚问题出现的步骤，有条件请提供截图。
 
 ## 下载
 
 软件官网：[aqzscn.cn](https://aqzscn.cn/)
+
+新版官网（测试）：[music.aqzscn.cn](https://music.aqzscn.cn/)
 
 安卓、MacOS、Windows 下载地址：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
 
