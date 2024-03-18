@@ -76,12 +76,12 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '文档',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: '文档',
+          // },
           // {to: '/blog', label: '博客', position: 'left'},
           {
             type: 'html',
@@ -90,10 +90,10 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} 音流, Inc. 由 Docusaurus 构建.`,
-      },
+      // footer: {
+      //   style: 'dark',
+      //   copyright: `Copyright © ${new Date().getFullYear()} 音流, Inc. 由 Docusaurus 构建.`,
+      // },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

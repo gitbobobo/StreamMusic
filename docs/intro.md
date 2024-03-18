@@ -34,7 +34,7 @@ NAS 是 `家庭云存储` 的简称，如果您尚未听说过，那么音流可
 
 :::info
 
-Windows 版安装包是 msix 格式，安装方法详见 Windows 安装教程。
+Windows 版安装包是 msix 格式，安装方法[点此](./guides/install)查看。
 
 :::
 
