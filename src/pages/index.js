@@ -21,11 +21,12 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-        <Button variant="contained" startIcon={<DownloadIcon />} size="large" href="/docs/versions/latest">立即下载</Button>
-        
-          <div className={styles.buttonSpacing}>
-          <Button variant="contained" endIcon={<ArrowForwardIcon />} size="large" href="/docs/intro">快速开始</Button>
-          </div>
+            <Link to="/docs/versions/latest" className={styles.buttonWrapper}>
+              <Button variant="contained" startIcon={<DownloadIcon />} size="large">立即下载</Button>
+            </Link>
+            <Link to="/docs/intro" className={styles.buttonWrapper}>
+              <Button variant="contained" endIcon={<ArrowForwardIcon />} size="large">快速开始</Button>
+            </Link>
         </div>
       </div>
     </header>

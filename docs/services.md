@@ -20,13 +20,15 @@ sidebar_position: 2
 
 |  | Subsonic | Navidrome | Audio Station | Emby | Jellyfin |
 | ------- | ------- | ------- | --- | --- | --- |
-| 内嵌歌词 |  | ✅ |  | ✅ |  |
-| 外置歌词 |  |  | ✅ | ✅ |  |
-| 在线歌词 |  |  | ✅ | ✅ |  |
+| 内嵌歌词 | - | ✅ |  | ✅ |  |
+| 外置歌词 | - |  | ✅ | ✅ |  |
+| 在线歌词 | - |  | ✅ | ✅ |  |
 | 歌手简介 | - | ✅ | ✅ | ✅ | ✅ |
 | 歌手头像 | - | *<sup>1</sup> | *<sup>2</sup> | ✅ | ✅ |
 | 多艺术家 | - |  | - | ✅ | ✅ |
 | 回放增益标签 | - | ✅  |  | | |
+| 收藏功能 | ✅ | ✅  | *<sup>3</sup> | ✅ | ✅ |
 
-1. Navidrome 若要显示歌手头像，需要配置 Spotify API，或在歌手文件夹下放一张名为 `artist.*` 的图片。[Artwork location resolution](https://www.navidrome.org/docs/usage/artwork/#artists)
+1. Navidrome 若要显示歌手头像，需要配置 Spotify API（国内环境即使配置了也很难有作用），或在歌手文件夹下放一张名为 `artist.*` 的图片。[Artwork location resolution](https://www.navidrome.org/docs/usage/artwork/#artists)
 2. Audio Station 的歌手头像用的是音乐库中的专辑图片。
+3. Audio Station 没有收藏功能，音流是通过歌单接口间接实现的此功能。此外，Emby 和 Jellyfin 收藏后不记录收藏时间，因此无法实现按收藏时间倒序的功能。
