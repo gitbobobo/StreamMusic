@@ -2,6 +2,8 @@
 
 支持 Android、iOS、MacOS、Windows 平台的 Subsonic/Navidrome/Jellyfin/Emby/AudioStation 客户端。
 
+![](https://oss.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
+
 本项目非开源项目。
 
 如果在使用中发现问题或有任何建议，可以在 **Issues** 栏目下新建问题，尽量描述清楚问题出现的步骤，有条件请提供截图。
