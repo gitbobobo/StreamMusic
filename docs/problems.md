@@ -67,12 +67,26 @@ Flac 文件没有 seekTable 信息，在 iOS 端会存在此问题。
 
 这似乎发生在安卓手机锁屏之后，目前暂未发现解决办法，具体处理进度参见问题 [Android MediaItem is not updating on car display through bluetooth](https://github.com/ryanheise/audio_service/issues/908)。
 
+### 安卓开启桌面歌词后 Bitwarden 应用内无响应
+
+这应该是 Bitwarden 的安全机制导致的，因为识别到了悬浮窗。
+
+:::info
+
+相关问题：[Android Bitwarden App - controls not working](https://www.reddit.com/r/Bitwarden/comments/x0jmbr/android_bitwarden_app_controls_not_working/)
+
+:::
+
 ### App 未打开时无法使用 CarPlay
 
 在 App 未打开时，flutter 引擎尚未初始化，此时无法接收到 CarPlay 已连接的消息，也就无法处理 CarPlay 有关的逻辑了。
 
 :::info
 
-这似乎是 Flutter 应用的硬伤？也可能是我了解的不多，如果不显示界面就能触发 Flutter 引擎初始化的话应该就可以解决这个问题了。
+相关问题：[CarPlay app required Flutter App open first?](https://github.com/oguzhnatly/flutter_carplay/issues/12)
+
+尝试了这个帖子中的做法，可以实现不打开 app 显示 CarPlay 界面，但无法播放音乐，手动进入应用后界面会卡住不动。
+
+等之后再研究研究。
 
 :::
