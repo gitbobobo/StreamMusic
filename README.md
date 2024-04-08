@@ -10,9 +10,7 @@
 
 ## 下载
 
-软件官网：[aqzscn.cn](https://aqzscn.cn/)
-
-新版官网（测试）：[music.aqzscn.cn](https://music.aqzscn.cn/)
+软件官网：[music.aqzscn.cn](https://music.aqzscn.cn/)
 
 安卓、MacOS、Windows 下载地址：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
 
