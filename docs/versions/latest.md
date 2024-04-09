@@ -4,7 +4,7 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-03-15
+更新于：2024-04-09
 
 :::tip 护甲+1
 
@@ -45,7 +45,7 @@ import DayCounter from '@site/src/components/DayCounter';
 
 Mac 下载地址：[音流v1.2.7.dmg](https://oss.aqzscn.cn/stream-music/versions/1.2.7/音流v1.2.7.dmg)
 
-Windows 版下载地址：[stream_music_1.2.7.0.msix](https://oss.aqzscn.cn/stream-music/versions/1.2.7/stream_music_1.2.7.0.msix)
+Windows 版下载地址：[stream_music_1.2.7.1.msix](https://oss.aqzscn.cn/stream-music/versions/1.2.7/stream_music_1.2.7.1.msix)
 
 ## V1.2.6（2024-03-15）
 
