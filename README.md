@@ -12,7 +12,7 @@
 
 软件官网：[music.aqzscn.cn](https://music.aqzscn.cn/)
 
-安卓、MacOS、Windows 下载地址：[「音流」版本更新](https://aqzscn.cn/archives/stream-music-versions)
+安卓、MacOS、Windows 下载地址：[「音流」版本更新](https://music.aqzscn.cn/docs/versions/latest)
 
 iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496)** 或 `Stream Music` 下载正式版。
 

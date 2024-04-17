@@ -4,19 +4,90 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-04-09
+更新于：2024-04-17
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 27 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 28 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
 但我始终相信：下个版本会更好！
 
 :::
+
+## V1.2.8（2024-04-17）
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Button from '@mui/material/Button';
+import WindowIcon from '@mui/icons-material/Window';
+import AppleIcon from '@mui/icons-material/Apple';
+import AndroidIcon from '@mui/icons-material/Android';
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.8/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <span class="ml-md gray">MD5: b6632b23a6222f0b9e3c6f4b4c0f64c7</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.8/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <span class="ml-md gray">MD5: c065b1057438cabc922e6679c8450e89</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.8/app-x86_64-release.apk">x86 版本</Button>
+    <span class="ml-md gray">MD5: f55b8fb5fe91eb29db3824c8632a1b3c</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.8/app-release.apk">通用版本（体积较大）</Button>
+    <span class="ml-md gray">MD5: 2dee053974f9376807c1ba8190dec36f</span>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.8/stream_music_1.2.8.0.msix">立即下载</Button>
+    <span class="ml-md gray">MD5: 7dfb4fb5aeea8e007b5531b8f0043dda</span>
+</div>
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.8/音流v1.2.8.dmg">立即下载</Button>
+    <span class="ml-md gray">MD5: bafa36503c4bf79584e3d96188b40a1a</span>
+</div>
+
+
+:::caution
+
+mac 版从当前版本起不再使用沙箱环境，若您之前安装过旧版，请自行删除 `/Users/用户名/Library/Containers/cn.aqzscn.streamMusic` 目录，避免占用您的电脑存储空间。
+
+:::
+</TabItem>
+</Tabs>
+
+更新内容：
+
+- 支持更多音乐格式，如 m4a, wav 整轨等。[查看详情](/docs/notes/plugins#media_kit)
+- 支持解析音乐文件内嵌歌词，文件若被转码或[文件格式](/docs/notes/plugins#audio_metadata_reader)不支持，此功能可能失效。
+- 支持[音量淡入淡出](https://github.com/gitbobobo/StreamMusic/issues/203)
+- 支持[与其他应用同时播放](https://github.com/gitbobobo/StreamMusic/issues/199)
+- 支持按文件类型筛选歌曲。
+- 非会员可进入二级页面查看会员功能。
+- 若歌手名下有重复文件，会在歌手列表右侧显示🔧
+- 现可记忆从歌手页面播放歌曲的播放模式。
+- 可配置播放时是否自动打开播放页。
+- Navidrome 支持 OPUS 转码，相关问题：[#95](https://github.com/gitbobobo/StreamMusic/issues/95), [#193](https://github.com/gitbobobo/StreamMusic/issues/193)
+- Plex 支持转码播放，支持文件删除接口和歌手匹配接口。
+- 修复 Subsonic 无法下载的问题。
+- 修复 [Emby 部分封面无法显示](https://github.com/gitbobobo/StreamMusic/issues/216)的问题。
+- 修复 [Audio Station 部分封面无法显示](https://github.com/gitbobobo/StreamMusic/issues/227)的问题。
+- 修复 [Audio Station DSM 6.0 版本登录失败](https://github.com/gitbobobo/StreamMusic/issues/219)的问题。
+- 因更换播放插件，以下问题被关闭：[#10](https://github.com/gitbobobo/StreamMusic/issues/10), [#29](https://github.com/gitbobobo/StreamMusic/issues/29), [#102](https://github.com/gitbobobo/StreamMusic/issues/102), [#121](https://github.com/gitbobobo/StreamMusic/issues/121), [#166](https://github.com/gitbobobo/StreamMusic/issues/166), [#185](https://github.com/gitbobobo/StreamMusic/issues/185)
+- 因更换播放插件，以下问题进入观察期，若无后续反馈将被关闭：[#86](https://github.com/gitbobobo/StreamMusic/issues/86), [#103](https://github.com/gitbobobo/StreamMusic/issues/103), [#146](https://github.com/gitbobobo/StreamMusic/issues/146), [#162](https://github.com/gitbobobo/StreamMusic/issues/162), [#177](https://github.com/gitbobobo/StreamMusic/issues/177), [#194](https://github.com/gitbobobo/StreamMusic/issues/194), [#196](https://github.com/gitbobobo/StreamMusic/issues/196), [#210](https://github.com/gitbobobo/StreamMusic/issues/210), [#212](https://github.com/gitbobobo/StreamMusic/issues/212), [#215](https://github.com/gitbobobo/StreamMusic/issues/215), [#226](https://github.com/gitbobobo/StreamMusic/issues/226)
 
 ## V1.2.7（2024-04-08）
 
