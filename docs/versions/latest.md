@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-04-17
+更新于：2024-05-15
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 28 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 29 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -18,7 +18,15 @@ import DayCounter from '@site/src/components/DayCounter';
 
 :::
 
-## V1.2.8（2024-04-17）
+## V1.2.9（2024-05-15）
+
+:::tip 活动预告
+
+音流将在 1.3.0 适配安卓TV，为庆祝音流达到此里程碑，**将在 1.3.0 推出之后进行为期两周的优惠活动**。
+
+活动期间，音流会员价格将降低 10 元左右。
+
+:::
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -26,6 +34,71 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.9/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <span class="ml-md gray">MD5: b92e53f777e90c2c5ffd85d8a33dd44f</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.9/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <span class="ml-md gray">MD5: 5384b906a87b2126a70772cfd49b0af0</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.9/app-x86_64-release.apk">x86 版本</Button>
+    <span class="ml-md gray">MD5: 42447e8e9a83b1fe2d5c4153a54ea05d</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.9/app-release.apk">通用版本（体积较大）</Button>
+    <span class="ml-md gray">MD5: aafea724704fc74ed72d01ebd9fcea31</span>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.9/stream_music_1.2.9.1.msix">立即下载</Button>
+    <span class="ml-md gray">MD5: 83374503628c198b8d31df7d867153c2</span>
+</div>
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.2.9/音流v1.2.9.dmg">立即下载</Button>
+    <span class="ml-md gray">MD5: 0a8f6aef5509376c2233521e5afbfc1b</span>
+</div>
+</TabItem>
+</Tabs>
+
+
+更新内容：
+
+- 新增直连模式（不再完全扫描服务器数据，这会导致部分功能缺失）
+- 媒体库模式（现有模式）不再扫描歌单内的歌
+- 不完美[兼容 Airsonic](https://github.com/gitbobobo/StreamMusic/issues/274) 与 Gonic
+- [升级线路配置功能](https://github.com/gitbobobo/StreamMusic/issues/248)，可创建多个线路，拖拽可调整优先级，可手动切换当前线路
+- 歌手列表增加宫格布局
+- 调整提示弹框样式
+- [兼容 mm:ss 格式的歌词](https://github.com/gitbobobo/StreamMusic/issues/230)
+- 增加配置：[忽略短歌词](https://github.com/gitbobobo/StreamMusic/issues/287)（少于5行）
+- 增加个性化配置：控制栏始终显示歌曲标题
+- 桌面端增加个性化配置：双击播放歌曲
+- Windows 端增加配置：是否应用窗口透明效果
+- Windows 支持通过托盘切换歌曲
+- 修复鸿蒙系统播放高码率文件闪退问题
+- 修复 [Windows 中文用户名导致的无法播放问题](https://github.com/gitbobobo/StreamMusic/issues/242)
+- 修复iOS音量淡入淡出的问题
+- [Plex 支持选择分区](https://github.com/gitbobobo/StreamMusic/issues/259)
+- 修复 bug：[#216](https://github.com/gitbobobo/StreamMusic/issues/216), [#231](https://github.com/gitbobobo/StreamMusic/issues/231), [#261](https://github.com/gitbobobo/StreamMusic/issues/261), [#276](https://github.com/gitbobobo/StreamMusic/issues/276), [#285](https://github.com/gitbobobo/StreamMusic/issues/285), [#280](https://github.com/gitbobobo/StreamMusic/issues/280), [#273](https://github.com/gitbobobo/StreamMusic/issues/273), [#266](https://github.com/gitbobobo/StreamMusic/issues/266), [#260](https://github.com/gitbobobo/StreamMusic/issues/260)
+
+文档更新：
+
+- 增加[直连模式说明](/docs/guides/operations#%E7%9B%B4%E8%BF%9E%E6%A8%A1%E5%BC%8F)
+- 增加[音乐服务接口文档](/docs/category/音乐服务)
+- 提供 [Navidrome 同步到 50000 首歌曲后无法继续同步的问题的解决方案](/docs/problems#navidrome-%E6%89%AB%E6%8F%8F%E5%88%B0-50000-%E9%A6%96%E6%AD%8C%E6%9B%B2%E5%90%8E%E5%A4%B1%E8%B4%A5)
+- 补充了一些[常见问题](/docs/problems)
+
+## V1.2.8（2024-04-17）
 
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">

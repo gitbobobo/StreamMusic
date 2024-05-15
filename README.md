@@ -1,6 +1,6 @@
 # StreamMusic（音流）
 
-支持 Android、iOS、MacOS、Windows 平台的 Subsonic/Navidrome/Jellyfin/Emby/AudioStation 客户端。
+支持 Android、iOS、MacOS、Windows 平台的 Subsonic/Navidrome/Jellyfin/Emby/AudioStation/Plex 客户端。
 
 ![](https://oss.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
 
@@ -15,6 +15,8 @@
 安卓、MacOS、Windows 下载地址：[「音流」版本更新](https://music.aqzscn.cn/docs/versions/latest)
 
 iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496)** 或 `Stream Music` 下载正式版。
+
+开发频道 [devmusic.aqzscn.cn](https://devmusic.aqzscn.cn/) 随缘更新，不会提供全部安装包。
 
 ## 平台适配
 
@@ -47,7 +49,7 @@ iOS 可直接在 AppStore 搜索 **[音流](https://apps.apple.com/cn/app/%E9%9F
 
 ## 日志查看方式
 
-反馈建议页面，不要选择类型，连续点击`通过邮件发送` 5 次，点击右上角图标即可查看最新日志。
+反馈建议页面，不要选择类型，连续点击`通过邮件发送` 3 次，点击右上角图标即可查看最新日志。
 
 > 应用启动后会自动清理两周前的日志。
 

@@ -407,6 +407,23 @@ sidebar_position: 1
 
 所以大家，都看到这里了，快去给 [media_kit](https://github.com/media-kit/media-kit) 点亮 🌟 吧～
 
+:::note 开发技巧
+
+直接使用默认配置，在鸿蒙系统播放高码率文件时会导致闪退问题。
+
+```dart
+NativePlayer get nativePlayer => player.platform as NativePlayer;
+
+if (Platform.isAndroid) {
+  // 修复 鸿蒙系统播放高码率文件时闪退问题
+  await nativePlayer.setProperty("ao", "audiotrack,opensles,");
+}
+```
+
+此处代码参考了 [spotube](https://github.com/KRTirtho/spotube) 项目的 [custom_player.dart](https://github.com/KRTirtho/spotube/blob/cb95663412fcc9a829c5657e0160132f13fb0649/lib/services/audio_player/custom_player.dart#L68)。
+
+:::
+
 ### audio_service
 
 [audio_service](https://github.com/ryanheise/audio_service) 用于通知系统当前正在播放的音乐并与系统控件交互，还可以用来保持音乐后台播放。
@@ -455,3 +472,16 @@ sidebar_position: 1
 因此目前音流会在安卓平台使用 taggy 解析音乐标签，而在其他平台使用 audio_metadata_reader 解析音乐标签。
 
 :::
+
+## Flutter 社区
+
+### Flutter Candies
+
+[Flutter 糖果社区](https://github.com/fluttercandies) 现在已经收录了很多有用的插件，用以补充官方组件缺少的功能。社区的组织者在[掘金](https://juejin.cn/user/254742428916408/posts)非常活跃，我已经默默关注了哈哈。
+
+目前音流用到了 Flutter Candies 的以下插件：
+
+- [extended_nested_scroll_view](https://github.com/fluttercandies/extended_nested_scroll_view) 解决歌曲列表页和歌手详情页列表内容滚动到透明 Header 下层的问题以及同步滚动的问题。
+- [loading_more_list](https://github.com/fluttercandies/loading_more_list) 不使用 ScrollController 实现**加载更多**的功能。
+- [scrollview_observer](https://github.com/fluttercandies/flutter_scrollview_observer) 实现动态切换宫格/列表视图的 **az 跳转**功能。
+- [flutter_smart_dialog](https://github.com/fluttercandies/flutter_smart_dialog) 无 BuildContext 的**全局提示/通知**。
