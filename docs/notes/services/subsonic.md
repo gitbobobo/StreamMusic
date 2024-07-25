@@ -281,6 +281,29 @@ url = 'http://your-server/rest/ping.view?u=joe&t=26719a1196d2a940705a59634eb18ea
 
 最低版本：1.0.0
 
+### getGenres 获取全部类型
+
+请求地址：`http://your-server/rest/getGenres`
+
+最低版本：1.9.0
+
+示例：
+
+```xml
+<subsonic-response
+	xmlns="http://subsonic.org/restapi" status="ok" version="1.10.2">
+	<genres>
+		<genre songCount="28" albumCount="6">Electronic</genre>
+		<genre songCount="6" albumCount="2">Hard Rock</genre>
+		<genre songCount="8" albumCount="2">R&B</genre>
+		<genre songCount="22" albumCount="2">Blues</genre>
+		<genre songCount="2" albumCount="2">Podcast</genre>
+		<genre songCount="11" albumCount="1">Brit Pop</genre>
+		<genre songCount="14" albumCount="1">Live</genre>
+	</genres>
+</subsonic-response>
+```
+
 ### getLyrics 获取歌词
 
 请求地址：`http://your-server/rest/getLyrics`
@@ -392,6 +415,32 @@ url = 'http://your-server/rest/ping.view?u=joe&t=26719a1196d2a940705a59634eb18ea
 		<album id="12" parent="1" title="Super Trouper" artist="ABBA" isDir="true" coverArt="23"/>
 		<song id="112" parent="11" title="Money, Money, Money" isDir="false" album="Arrival" artist="ABBA" track="7" year="1978" genre="Pop" coverArt="25" size="4910028" contentType="audio/flac" suffix="flac" transcodedContentType="audio/mpeg" transcodedSuffix="mp3" path="ABBA/Arrival/Money, Money, Money.mp3"/>
 	</searchResult2>
+</subsonic-response>
+```
+
+### getSongsByGenre 获取某个类型的歌曲列表
+
+请求地址：`http://your-server/rest/getSongsByGenre`
+
+最低版本：1.9.0
+
+| 参数名 | 是否必填 | 默认值 | 备注 |
+| --- | --- | --- | --- |
+| genre | Y |  | 类型名 |
+| count | N | 10 | 返回的歌曲数量，最大 500 |
+| offset | N | 0 | 起始行数，用于分页 |
+
+示例：
+
+```xml
+<subsonic-response
+	xmlns="http://subsonic.org/restapi" status="ok" version="1.9.0">
+	<songsByGenre>
+		<song id="16" parent="15" title="Atrapado" album="Antígona" artist="Antígona" isDir="false" coverArt="15" created="2012-12-26T17:05:54" duration="261" bitRate="128" track="1" year="2008" genre="Metal" size="4188288" suffix="mp3" contentType="audio/mpeg" isVideo="false" path="Antigona/Antigona/01 - Atrapado.mp3" albumId="2" artistId="2" type="music"/>
+		<song id="17" parent="15" title="Gritar al cielo" album="Antígona" artist="Antígona" isDir="false" coverArt="15" created="2012-12-26T17:05:44" duration="233" bitRate="128" track="2" year="2008" genre="Metal" size="3737728" suffix="mp3" contentType="audio/mpeg" isVideo="false" path="Antigona/Antigona/02 - Gritar al cielo.mp3" albumId="2" artistId="2" type="music"/>
+		<song id="18" parent="15" title="En sus garras" album="Antígona" artist="Antígona" isDir="false" coverArt="15" created="2012-12-26T17:05:22" duration="239" bitRate="128" track="3" year="2008" genre="Metal" size="3846272" suffix="mp3" contentType="audio/mpeg" isVideo="false" path="Antigona/Antigona/03 - En sus garras.mp3" albumId="2" artistId="2" type="music"/>
+		<song id="19" parent="15" title="Nuevos Horizontes" album="Antígona" artist="Antígona" isDir="false" coverArt="15" created="2012-12-26T17:05:35" duration="310" bitRate="128" track="4" year="2008" genre="Metal" size="4980864" suffix="mp3" contentType="audio/mpeg" isVideo="false" path="Antigona/Antigona/04 - Nuevos Horizontes.mp3" albumId="2" artistId="2" type="music"/>
+	</songsByGenre>
 </subsonic-response>
 ```
 

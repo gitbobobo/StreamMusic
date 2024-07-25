@@ -169,6 +169,7 @@ query:
 
 | 参数名 | 备注 |
 | --- | --- |
+| GenreIds | 类型ID，可选 |
 | SortBy | 排序方式列表，可选值: `Random`, `DateCreated`, `PremiereDate`, `PlayCount`, `DatePlayed`, `SortName`, `CommunityRating` |
 | SortOrder | 排序，可选值: `Ascending`, `Descending` |
 | IncludeItemTypes | 包含的项目类型，可选值：`MusicAlbum` |
@@ -542,6 +543,170 @@ query:
 危险操作，此接口需要管理员权限。
 
 :::
+
+### Genres 获取全部类型
+
+GET: `[host]/Genres`
+
+query:
+
+| 参数名 | 备注 |
+| --- | --- |
+| ParentId | 28e9960207c978c0d9aaefc8ae2d3a79 |
+| Recursive | 是否递归查询 |
+| userId | 用户ID |
+| StartIndex | 起始行数 |
+| SortBy | 固定值，`SortName` |
+| SortOrder | 固定值，`Ascending` |
+| Fields | 结果内容，`PrimaryImageAspectRatio,ItemCounts` |
+
+response:
+
+```json
+{
+    "Items": [
+        {
+            "Name": "Blues",
+            "ServerId": "9c37aa3250ca4fdcaefd7c5d527c4dc9",
+            "Id": "df8727bc10d9300f2539c1ade11bca86",
+            "ChannelId": null,
+            "Type": "MusicGenre",
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "a9cce81ed92265900007e40efc6f103f"
+            },
+            "BackdropImageTags": [],
+            "ImageBlurHashes": {
+                "Primary": {
+                    "a9cce81ed92265900007e40efc6f103f": "eDB|4@_2%MWs0L?G?axut8-;s;ogfQRjRP4oNGWBax%M9aWBj[xu-o"
+                }
+            },
+            "LocationType": "FileSystem",
+            "MediaType": "Unknown"
+        },
+        {
+            "Name": "General Chinese Pop",
+            "ServerId": "9c37aa3250ca4fdcaefd7c5d527c4dc9",
+            "Id": "db26524cecf61e7877ca36a7ce56e977",
+            "ChannelId": null,
+            "Type": "MusicGenre",
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "76ead409c6e0e1a6b4aca1b68c3a9f97"
+            },
+            "BackdropImageTags": [],
+            "ImageBlurHashes": {
+                "Primary": {
+                    "76ead409c6e0e1a6b4aca1b68c3a9f97": "euH_f9RjfQM{of?HayfQWBoffQfQfQfQfQ~WWBfQRkt7%MoffQt7j["
+                }
+            },
+            "LocationType": "FileSystem",
+            "MediaType": "Unknown"
+        },
+        {
+            "Name": "国语流行",
+            "ServerId": "9c37aa3250ca4fdcaefd7c5d527c4dc9",
+            "Id": "eb1c5035435d9cdae1b1e707b5b10d3e",
+            "ChannelId": null,
+            "Type": "MusicGenre",
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "b7f4de3edc193f2ed8828cb8723207ae"
+            },
+            "BackdropImageTags": [],
+            "ImageBlurHashes": {
+                "Primary": {
+                    "b7f4de3edc193f2ed8828cb8723207ae": "eMP72#D*fQ01~pj[azfQj[RjfQfQfQfQfQWBfQfQofM{odt7fQxuoy"
+                }
+            },
+            "LocationType": "FileSystem",
+            "MediaType": "Unknown"
+        },
+        {
+            "Name": "Pop",
+            "ServerId": "9c37aa3250ca4fdcaefd7c5d527c4dc9",
+            "Id": "f1f202f389018ad2c0766af4b0fcb155",
+            "ChannelId": null,
+            "Type": "MusicGenre",
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "b1b7f3253c1eb7961d690e50119fffe2"
+            },
+            "BackdropImageTags": [],
+            "ImageBlurHashes": {
+                "Primary": {
+                    "b1b7f3253c1eb7961d690e50119fffe2": "ecJi^ENHfQEM0g=|oefQt6EL9bt6fQ\u001a|k7azfQafn+WCayfQafxa"
+                }
+            },
+            "LocationType": "FileSystem",
+            "MediaType": "Unknown"
+        },
+        {
+            "Name": "R&B",
+            "ServerId": "9c37aa3250ca4fdcaefd7c5d527c4dc9",
+            "Id": "d2b41a81a1122b14418c423b2f3616e9",
+            "ChannelId": null,
+            "Type": "MusicGenre",
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "8b1af59966f74172e8c53872d75450f2"
+            },
+            "BackdropImageTags": [],
+            "ImageBlurHashes": {
+                "Primary": {
+                    "8b1af59966f74172e8c53872d75450f2": "eCDc8ZI[%2x]0fxCxWE1R*IotRx]-;-:xuD*s:IU-oof%gt8t7%gxD"
+                }
+            },
+            "LocationType": "FileSystem",
+            "MediaType": "Unknown"
+        }
+    ],
+    "TotalRecordCount": 5,
+    "StartIndex": 0
+}
+```
+
+### Lyrics 获取歌词
+
+GET: `[host]/Audio/[id]/Lyrics`
+
+response:
+
+```json
+{
+    "Metadata": {},
+    "Lyrics": [
+        {
+            "Text": "作词 : G.E.M.邓紫棋",
+            "Start": 0
+        },
+        {
+            "Text": "作曲 : DEE.P/JOHNSON REBECCA ROSE/TE DI/SOL",
+            "Start": 10000000
+        },
+        {
+            "Text": "编曲：Lupo Groinig",
+            "Start": 43100000
+        },
+        {
+            "Text": "监制：Lupo Groinig",
+            "Start": 53100000
+        },
+        {
+            "Text": "说不出说不出一句话",
+            "Start": 137300000
+        },
+        {
+            "Text": "连我自己都很惊讶",
+            "Start": 163500000
+        },
+        {
+            "Text": "这死去的爱",
+            "Start": 2629600000
+        }
+    ]
+}
+```
 
 ### Items 获取歌单列表
 

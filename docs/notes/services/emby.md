@@ -39,7 +39,9 @@ query:
 | EnableImageTypes | 图片类型列表，可选值：`Primary`, `Backdrop`, `Thumb` |
 | StartIndex | 起始行数 |
 | Limit | 最大数量，可选 |
+| ParentId | 父视图ID，可选 |
 | artistIds | 歌手 id 列表，可选 |
+| GenreIds | 类型ID列表，可选 |
 | SearchTerm | 搜索词，可选 |
 
 response:
@@ -197,6 +199,13 @@ response:
 ### Artists 获取歌手列表
 
 参见 Jellyfin 的 [Artists](./jellyfin#artists-获取歌手列表) 接口。
+
+补充 query：
+
+| 参数名 | 备注 |
+| --- | --- |
+| ParentId | 父视图ID，可选 |
+| GenreIds | 类型ID列表，可选 |
 
 ### Items/[id] 获取歌手信息
 
@@ -363,11 +372,76 @@ response:
 }
 ```
 
+### Genres 获取全部类型
 
+GET: `[host]/Genres`
+
+query:
+
+| 参数名 | 备注 |
+| --- | --- |
+| ParentId | 20111 |
+| Recursive | 是否递归查询 |
+| IncludeItemTypes | 固定值，`MusicAlbum` |
+| userId | 用户ID |
+| StartIndex | 起始行数 |
+| Limit | 最大行数 |
+| SortBy | 固定值，`SortName` |
+| SortOrder | 固定值，`Ascending` |
+
+response:
+
+```json
+{
+    "Items": [
+        {
+            "Name": "播客",
+            "ServerId": "5472030a784c45f4a90845bd9886bc98",
+            "Id": "59145",
+            "CanDelete": false,
+            "SupportsSync": true,
+            "Type": "MusicGenre",
+            "UserData": {
+                "PlaybackPositionTicks": 0,
+                "PlayCount": 0,
+                "IsFavorite": false,
+                "Played": false
+            },
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "c7a60444a93cb13209189ed883f8a638"
+            },
+            "BackdropImageTags": []
+        },
+        {
+            "Name": "古风",
+            "ServerId": "5472030a784c45f4a90845bd9886bc98",
+            "Id": "61242",
+            "CanDelete": false,
+            "SupportsSync": true,
+            "Type": "MusicGenre",
+            "UserData": {
+                "PlaybackPositionTicks": 0,
+                "PlayCount": 0,
+                "IsFavorite": false,
+                "Played": false
+            },
+            "PrimaryImageAspectRatio": 1,
+            "ImageTags": {
+                "Primary": "fb59591640202c85ef243b7e1df8789d"
+            },
+            "BackdropImageTags": []
+        },
+    ],
+    "TotalRecordCount": 38
+}
+```
 
 ### Stream.js 获取歌词
 
-GET: `[host]/Items/[id]/[MediaSourceId]/Subtitles/2/Stream.js`
+GET: `[host]/Items/[id]/[MediaSourceId]/Subtitles/[SubtitleIndex]/Stream.js`
+
+> SubtitleIndex 从歌曲信息中获取，取 `MediaStreams[Type=Subtitle&Codec=lrc].Index` 的值
 
 query:
 
@@ -938,6 +1012,7 @@ query:
 | SortBy | 排序方式列表，可选值: `SortName`|
 | SortOrder | 排序，可选值: `Ascending`, `Descending` |
 | ParentId | 视图ID，由上一步获取，筛选 `CollectionType = music` 的视图 |
+| GenreIds | 类型ID列表，可选 |
 | Recursive | 是否递归查询 |
 | includeItemTypes | 项目类型，可选值：`Playlist` |
 | Fields | 包含的字段列表，可选值：`SortName`, `CanDelete`, `PrimaryImageAspectRatio`, `BasicSyncInfo`, `Container`, `ProductionYear`, `Status`, `EndDate`, `Prefix` |
@@ -1198,6 +1273,8 @@ query:
 | EnableImageTypes | 图片类型列表，可选值：`Primary` |
 | StartIndex | 起始行数 |
 | Limit | 最大数量，可选 |
+| ParentId | 父视图ID，可选 |
+| GenreIds | 类型ID列表，可选 |
 | isFavorite | 收藏状态，可选 |
 | SearchTerm | 搜索词，可选 |
 

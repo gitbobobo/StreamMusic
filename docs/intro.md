@@ -9,7 +9,7 @@ sidebar_position: 1
 ![](https://oss.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
 
 1. 目前支持的音乐服务: Subsonic,Navidrome,Emby,Jellyfin,AudioStation,Plex.
-2. 目前支持的平台: Android 5.0, iOS 14, macOS 10.14, Windows 10.
+2. 目前支持的平台: Android 6.0, iOS 14, macOS 10.14, Windows 10.
 
 ## 要求
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# 自定义 API 文档
+# 自定义 API
 
 某些情况下，音乐服务提供的接口可能无法返回我们需要的信息，故提供自定义 API，高级用户可以自定义返回内容。
 

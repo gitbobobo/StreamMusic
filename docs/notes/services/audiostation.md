@@ -538,6 +538,8 @@ GET query:
 | sort_by | 排序方式，可选值：`time`, `random`, `year`, `name`, `display_artist`, `avg_rating` |
 | sort_direction | 排序，可选值：`ASC`, `DESC` |
 | filter | 专辑名，可选 |
+| artist | 歌手名，可选 |
+| genre | 类型名，可选 |
 
 response:
 
@@ -576,6 +578,7 @@ GET query:
 | method | `list` |
 | library | 查询范围，可选值： `all`, `personal` |
 | additional | `avg_rating` |
+| genre | 类型名，可选 |
 | offset | 行数偏移 |
 | limit | 结果数量，可选 |
 | sort_by | 排序方式，可选值：`name` |
@@ -736,6 +739,71 @@ response:
     "success": true
 }
 ```
+
+### Genre 获取类型列表
+
+POST data:
+
+| 参数名 | 备注 |
+| --- | --- |
+| version | 版本，固定填 `3` |
+| api | `SYNO.AudioStation.Genre` |
+| method | `list` |
+| library | 查询范围，可选值： `all`, `personal` |
+| offset | 行数偏移 |
+| limit | 结果数量，可选 |
+| sort_by | 排序方式，`name` |
+| sort_direction | 排序方向，`ASC`, `DESC` |
+
+response:
+
+```json
+{
+    "data": {
+        "genres": [
+            {
+                "additional": {
+                    "avg_rating": {
+                        "rating": 0
+                    }
+                },
+                "name": ""
+            },
+            {
+                "additional": {
+                    "avg_rating": {
+                        "rating": 5
+                    }
+                },
+                "name": "国际流行"
+            },
+            {
+                "additional": {
+                    "avg_rating": {
+                        "rating": 5
+                    }
+                },
+                "name": "国语流行"
+            },
+            {
+                "additional": {
+                    "avg_rating": {
+                        "rating": 0
+                    }
+                },
+                "name": ""
+            }
+        ],
+        "offset": 0,
+        "total": 44
+    },
+    "success": true
+}
+```
+
+:::note
+AudioStation 的空字符串显示为`未知的歌曲类型`.
+:::
 
 ### Lyrics 获取歌词
 
@@ -961,6 +1029,8 @@ POST data:
 | rating_filter | 评分，可选 |
 | album_artist | 专辑艺术家，可选 |
 | album | 专辑名，可选 |
+| artist | 歌手名，可选 |
+| genre | 类型名，可选 |
 | sort_by | 排序方式，可选值：`title`, `name`, `artist`, `random` |
 | sort_direction | 排序，可选值：`ASC`, `DESC` |
 | additional | 附加信息列表，可选值：`song_tag`, `song_audio`, `song_rating` |

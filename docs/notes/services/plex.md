@@ -506,6 +506,28 @@ query:
 | includeMeta | `1` |
 | parent | 目录ID，不传时查询根目录 |
 
+### genre 获取类型列表
+
+GET: `[host]/library/sections/[sectionId]/genre`
+
+query:
+
+| 参数名 | 备注 |
+| --- | --- |
+| type | `9` |
+
+response:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaContainer size="32" allowSync="0" art="/:/resources/artist-fanart.jpg" content="secondary" identifier="com.plexapp.plugins.library" mediaTagPrefix="/system/bundle/media/flags/" mediaTagVersion="1667296136" nocache="1" thumb="/:/resources/artist.png" title1="音乐" title2="By Genre" viewGroup="secondary" viewMode="65592">
+	<Directory fastKey="/library/sections/1/all?genre=231" key="231" title="Abstract" type="genre" />
+	<Directory fastKey="/library/sections/1/all?genre=19984" key="19984" title="Alternative 另类" type="genre" />
+	<Directory fastKey="/library/sections/1/all?genre=3941" key="3941" title="国际流行" type="genre" />
+	<Directory fastKey="/library/sections/1/all?genre=19688" key="19688" title="流行" type="genre" />
+	<Directory fastKey="/library/sections/1/all?genre=1625" key="1625" title="粤语流行" type="genre" />
+</MediaContainer>
+```
 
 ### streams 获取歌词
 

@@ -21,7 +21,7 @@ sidebar_position: 2
 
 |  | Subsonic | Navidrome | Audio Station | Emby | Jellyfin | Plex |
 | ------- | ------- | ------- | --- | --- | --- | --- |
-| 内嵌歌词<sup>1</sup> | - | ✅ |  | ✅ |  | |
+| 内嵌歌词<sup>1</sup> | - | ✅ |  | ✅ | ✅ | |
 | 外置歌词 | - |  | ✅ | ✅ | ✅ | ✅ |
 | 在线歌词 | - |  | ✅ | ✅ | ✅ | ✅ |
 | 歌手简介 | - | ✅ | | ✅ | ✅ | ✅ |
