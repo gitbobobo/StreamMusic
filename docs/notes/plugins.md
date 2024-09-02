@@ -32,7 +32,7 @@ sidebar_position: 1
 
 ![](https://oss.aqzscn.cn/resource/blog/img/2024/faae1-9ad0cf3582cd7ff590b3e02645f19bc7.png)
 
-## 平台相关
+## 平台特性
 
 ### macos_window_utils
 
@@ -41,6 +41,58 @@ sidebar_position: 1
 ### flutter_acrylic
 
 [flutter_acrylic](https://github.com/alexmercerind/flutter_acrylic) 可以在 macOS、Windows、Linux 平台实现窗口模糊/透明效果，其中 macOS 依赖了 `macos_window_utils` 插件，因此如果使用此插件就无需再引入 `macos_window_utils` 了。
+
+### window_manager
+
+[window_manager](https://pub.dev/packages/window_manager) 可用于在桌面端控制窗口的一系列属性。
+
+### tray_manager
+
+[tray_manager](https://pub.dev/packages/tray_manager) 可以定义桌面端的系统托盘。
+
+### windows_taskbar
+
+[windows_taskbar](https://pub.dev/packages/windows_taskbar) 用于在 Windows 的任务栏图标上添加预览按钮与进度条，对于音乐播放器来说非常实用。
+
+### flutter_carplay
+
+[flutter_carplay](https://pub.dev/packages/flutter_carplay) 可用于在 iOS 平台实现 CarPlay 功能，最低支持 iOS 14.
+
+作者已经很久没有更新过了，可以尝试其他开发者的修改版本。
+
+目前一个比较困扰我的问题是如何在打开 CarPlay 时启动 Flutter 引擎，同时保证再从手机上打开 APP 时界面不会卡住。
+
+
+
+## 网络
+
+### dio
+
+[dio](https://pub.dev/packages/dio) 是一个强大的 HTTP 网络请求库，其中的拦截器、请求取消、自定义适配器等特色功能都很好用，社区还提供了一些插件可让网络请求的处理更加轻松。
+
+dart 的 HTTP 请求是自己实现的，仅适配了标准的 HTTP 请求，处理一些非标准的 HTTP 请求就会出问题，在这一点上是不如原生平台的网络请求的。
+
+虽然 dio 目前也已经有了 [native_dio_adapter](https://github.com/cfug/dio/tree/main/plugins/native_dio_adapter) 插件可以通过原生平台发送请求，但只在安卓和 iOS 平台有效，这对于音流来说显然是不够的。
+
+最近新出了个 [rhttp](https://github.com/Tienisto/rhttp)，原理是使用 FRB 插件通过 Rust 发送网络请求，可以观察一段时间，如果稳定的话可能会尝试切换到这个插件上。
+
+### shelf
+
+[shelf](https://pub.dev/packages/shelf) 可用于创建本地的 HTTP 服务器，可通过 [shelf_proxy](https://pub.dev/packages/shelf_proxy) 等相关插件简化处理步骤。
+
+需要注意的是，iOS 平台创建的本地服务器会在应用不再位于前台后停用，应用需要检测本地服务是否可用并准备重启。
+
+### connectivity_plus
+
+[connectivity_plus](https://pub.dev/packages/connectivity_plus) 可用于检测应用当前的网络环境。
+
+### network_info_plus
+
+[network_info_plus](https://pub.dev/packages/network_info_plus) 可用于获取 Wi-Fi 信息，比如 IP 地址。
+
+### url_launcher
+
+[url_launcher](https://pub.dev/packages/url_launcher) 可用于在浏览器中打开链接。
 
 ## 音频
 
@@ -441,37 +493,6 @@ if (Platform.isAndroid) {
 | FLAC        | `Vorbis Comments`       | ✅   |
 | OGG         | `Vorbis Comments`       | ✅   |
 | Opus        | `Vorbis Comments`       | ✅   |
-
-### taggy
-
-[taggy](https://github.com/DMouayad/taggy) 同样也是一款读取/写入音乐文件标签信息的插件，但底层连接的是 [lofty](https://github.com/Serial-ATA/lofty-rs/)，拥有更为广泛的格式支持：
-
-| File Format | Metadata Format(s)           |
-|-------------|------------------------------|
-| AAC (ADTS)  | `ID3v2`, `ID3v1`             |
-| Ape         | `APE`, `ID3v2`\*, `ID3v1`    |
-| AIFF        | `ID3v2`, `Text Chunks`       |
-| FLAC        | `Vorbis Comments`, `ID3v2`\* |
-| MP3         | `ID3v2`, `ID3v1`, `APE`      |
-| MP4         | `iTunes-style ilst`          |
-| MPC         | `APE`, `ID3v2`\*, `ID3v1`\*  |                        
-| Opus        | `Vorbis Comments`            |
-| Ogg Vorbis  | `Vorbis Comments`            |
-| Speex       | `Vorbis Comments`            |
-| WAV         | `ID3v2`, `RIFF INFO`         |
-| WavPack     | `APE`, `ID3v1`               |
-
-\* The tag will be **read only**, due to lack of official support
-
-:::info
-
-既然 taggy 这么强大，我为什么还要先介绍 audio_metadata_reader 呢？
-
-因为我只能在安卓平台成功运行起 taggy😭，其他平台不知是我使用方法问题还是作者并未测试，我这里是无法运行的。
-
-因此目前音流会在安卓平台使用 taggy 解析音乐标签，而在其他平台使用 audio_metadata_reader 解析音乐标签。
-
-:::
 
 ## Flutter 社区
 

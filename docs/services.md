@@ -9,7 +9,7 @@ sidebar_position: 2
 ## 支持版本
 
 - Navidrome 0.49.3 及以上
-- Plex 1.29.2 及以上，支持 OTP 验证码登录
+- Plex 1.29.2 及以上，支持 OTP 验证码登录，暂不支持登陆到共享音乐库
 - AudioStation DSM 6 及以上，支持 OTP 验证码登录
 - Emby  4.7.14.0 及以上
 - Jellyfin 10.8.10 及以上

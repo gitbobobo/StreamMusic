@@ -82,11 +82,17 @@ import AndroidIcon from '@mui/icons-material/Android';
     <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/stream_music_${version}.0.msix">立即下载</Button>
     <span class="ml-md gray">MD5: ${windowsMd5}</span>
 </div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
 </TabItem>
 
 <TabItem value="mac" label="macOS">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/音流v${version}.dmg">立即下载</Button>
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/StreamMusic_${version}.dmg">立即下载</Button>
     <span class="ml-md gray">MD5: ${macMd5}</span>
 </div>
 </TabItem>

@@ -8,7 +8,15 @@ sidebar_position: 3
 
 ## 图片背景
 
+- [歌曲列表默认封面](https://pixabay.com/zh/vectors/record-disk-disc-music-musical-23281/) by Clker-Free-Vector-Images
 - [tv端歌手详情页面默认背景](https://pixabay.com/zh/photos/concert-singer-singing-stage-2566002/) by StockSnap
+
+## 彩色插画
+
+- [警告](https://pixabay.com/zh/vectors/warning-caution-alert-icon-media-145066/) by OpenClipart-Vectors
+- [成功](https://pixabay.com/zh/vectors/icon-symbol-confirmation-hook-ok-803718/) by Leovinus
+- [错误](https://pixabay.com/zh/vectors/error-button-failure-warning-24842/) by Clker-Free-Vector-Images
+- [信息](https://pixabay.com/zh/vectors/info-information-tips-icon-support-148099/) by OpenClipart-Vectors
 
 ## 单色插画
 

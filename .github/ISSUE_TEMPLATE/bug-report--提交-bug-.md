@@ -7,10 +7,10 @@ assignees: gitbobobo
 
 ---
 
-**Describe the bug (BUG 描述)**
+**Describe the bug (BUG 描述，多条问题请分别建立 issue)**
 A clear and concise description of what the bug is.
 
-**To Reproduce (复现步骤)**
+**To Reproduce (复现步骤，复现问题是处理问题的必要条件)**
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -30,6 +30,9 @@ If applicable, add screenshots to help explain your problem.
 
 **Music Server Type (音乐服务器类型)**
 e.g. emby 4.17.
+
+- [ ] Direct Mode（直连模式）
+- [ ] Library Mode（媒体库模式）
 
 **Additional context (额外信息)**
 Add any other context about the problem here.

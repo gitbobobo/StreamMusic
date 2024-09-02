@@ -21,12 +21,6 @@ sidebar_position: 5
 
 ![](https://oss.aqzscn.cn/resource/blog/img/2024/90011-293fd6ac80a1ce9bc85adf176c807e19.png)
 
-:::tip
-
-歌曲在播放到 1/4 位置时会向服务器发送滚动播放记录的请求（AudioStation 不支持此接口）。
-
-:::
-
 在某个专辑的歌曲列表中，序号指的是音轨号，而右上角的数字表示碟号。
 
 ![](https://oss.aqzscn.cn/resource/blog/img/2024/90642-5882f5ffcf3b92988a49aaa5dac913c3.png)
@@ -49,3 +43,22 @@ sidebar_position: 5
 2. 扫码识别二维码使用了 [mobile_scanner](https://github.com/juliansteenbakker/mobile_scanner) 插件，可能有部分识别不到的情况，可尝试返回重进更换一个新的二维码。
 
 :::
+
+## 歌词
+
+目前只支持 LRC 格式的歌词，详细可参考 [维基百科](https://zh.wikipedia.org/wiki/LRC%E6%A0%BC%E5%BC%8F)。
+
+对于双语歌词，目前支持以下两种格式：
+
+**相同时间轴**
+
+```
+[00:01.123] 歌词
+[00:01.123] 翻译
+```
+
+**以【】包裹**
+
+```
+[00:01.123] 歌词【翻译】
+```

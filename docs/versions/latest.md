@@ -4,19 +4,120 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-07-25
+更新于：2024-09-02
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 30 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 31 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
 但我始终相信：下个版本会更好！
 
 :::
+
+## V1.3.1（2024-09-02）
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Button from '@mui/material/Button';
+import WindowIcon from '@mui/icons-material/Window';
+import AppleIcon from '@mui/icons-material/Apple';
+import AndroidIcon from '@mui/icons-material/Android';
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <span class="ml-md gray">MD5: dd95dadfc5e0da5390a56a4c2333b529</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <span class="ml-md gray">MD5: c6cc33ba5efa185d3daea8f62bdf399a</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-x86_64-release.apk">x86 版本</Button>
+    <span class="ml-md gray">MD5: be12b8d86a1d9867c6b2b6cfbddcee47</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-release.apk">通用版本（体积较大）</Button>
+    <span class="ml-md gray">MD5: 4e8d8000211401a7f1aa5f36a63ef0c7</span>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/stream_music_1.3.1.5.msix">立即下载</Button>
+    <span class="ml-md gray">MD5: 9eb42a5d0d3730034ec76030dee86bb9</span>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/StreamMusic_1.3.1.dmg">立即下载</Button>
+    <span class="ml-md gray">MD5: 156a5e98e00c9e0287f36169be4cbf38</span>
+</div>
+
+:::caution
+
+当前版本修复了与最新版 Mac 系统的兼容问题，安装前需要先在访达 - 应用程序按 `Command + Delete` 删除之前安装的版本，否则会同时存在两个音流。
+
+:::
+</TabItem>
+</Tabs>
+
+更新内容：
+
+- [DLNA 功能修复](https://github.com/gitbobobo/StreamMusic/issues/254)
+- [Windows 新增任务栏快捷操作与播放进度显示](https://github.com/gitbobobo/StreamMusic/issues/220)
+- 新增专辑艺术家列表（仅Emby和Jellyfin有效，其他服务端等同于歌手列表）
+- 支持多艺术家跳转(此前默认跳转第一个)
+- 支持[配置代理地址](https://github.com/gitbobobo/StreamMusic/issues/447)
+- 去掉实时搜索逻辑（可能导致搜索时间过长），需按回车键触发搜索
+- 手机端的首页显示资料库别名
+- 调整纯色主题配色
+- 对话框样式改为各个平台的原生样式，后续将逐步替换其他组件
+- 支持[上报播放中的状态](https://github.com/gitbobobo/StreamMusic/issues/437)
+- [歌曲详情显示缓存位置](https://github.com/gitbobobo/StreamMusic/issues/151)
+- Emby/Jellyfin 增加全部分区的选项
+- 封面显示逻辑调整回原来的（歌曲展示歌曲封面，专辑展示专辑封面）
+- [修改歌曲列表默认封面](https://github.com/gitbobobo/StreamMusic/issues/468)
+- 优化重定向歌曲资源的处理逻辑
+- 调整歌词偏移后，按对勾会调用歌词确认接口
+- [调整歌词与翻译的间距](https://github.com/gitbobobo/StreamMusic/issues/474)
+- 同步数据的IP地址现可识别多网卡的IP地址
+- [恢复自定义API保存按钮](https://github.com/gitbobobo/StreamMusic/issues/458)
+- [媒体库模式文件夹模糊搜索](https://github.com/gitbobobo/StreamMusic/issues/481)不再对大小写敏感
+- [提升歌手详情页按钮可见性](https://github.com/gitbobobo/StreamMusic/issues/477)
+- 兼容 [macOS Beta 3](https://github.com/gitbobobo/StreamMusic/issues/414)
+- 修复无法导入歌单的问题
+- 修复自定义歌单顺序无法保存的问题
+- 修复首页批量歌单歌曲时只能下载第一首的问题
+- 兼容 [Jellyfin 10.8](https://github.com/gitbobobo/StreamMusic/issues/429)
+- 修复 Plex 在 CarPlay 中点击歌曲列表后闪退的问题
+- 修复 [Jellyfin 不显示封面的问题](https://github.com/gitbobobo/StreamMusic/issues/435)
+- 修复无法删除已下载的歌曲的问题
+- 修复媒体库模式下最近与最常播放不显示的问题
+- 修复[直连模式下群晖无法按歌手筛选专辑和歌曲的问题](https://github.com/gitbobobo/StreamMusic/issues/433)
+- 修复添加 BaseUrl 后无法播放的问题 [#438](https://github.com/gitbobobo/StreamMusic/issues/438) [#396](https://github.com/gitbobobo/StreamMusic/issues/396)
+- 修复[无法播放文件夹下歌曲的问题](https://github.com/gitbobobo/StreamMusic/issues/473)
+- 修复[媒体库模式下群晖无法按添加时间倒序](https://github.com/gitbobobo/StreamMusic/issues/459)的问题
+- 修复[支付宝订单号恢复页面按钮不可用的问题](https://github.com/gitbobobo/StreamMusic/issues/453)
+- 修复[低版本安卓无法恢复购买的问题](https://github.com/gitbobobo/StreamMusic/issues/469)
+- 修复 [TV 版第二次打开时可能卡在启动页](https://github.com/gitbobobo/StreamMusic/issues/446)的问题
+- 修复桌面端搜索到多个歌词时无法滚动选择的问题（添加底部指示器）
+- 修复[随机播放歌单内歌曲时随机范围过小](https://github.com/gitbobobo/StreamMusic/issues/530)的问题
+- 修复修改系统时区后歌词不会自动滚动的问题
+- 修复[播放高码率文件可能出现电流声](https://github.com/gitbobobo/StreamMusic/issues/518)的问题
+
 
 ## V1.3.0（2024-07-25）
 
@@ -30,30 +131,23 @@ import DayCounter from '@site/src/components/DayCounter';
 
 :::
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import Button from '@mui/material/Button';
-import WindowIcon from '@mui/icons-material/Window';
-import AppleIcon from '@mui/icons-material/Apple';
-import AndroidIcon from '@mui/icons-material/Android';
-
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">
 <div class="mv-sm">
     <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-arm64-v8a-release.apk">ARM64 版本</Button>
-    <span class="ml-md gray">MD5: afe89bf8a90d99b9bff59b564269cae1</span>
+    <span class="ml-md gray">MD5: 1cddbc720c19dde02d9d50d9a2106c35</span>
 </div>
 <div class="mv-sm">
     <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
-    <span class="ml-md gray">MD5: f86ee784113971179266b401f78fda09</span>
+    <span class="ml-md gray">MD5: 445eaba3783884ddb4207e99947ebd52</span>
 </div>
 <div class="mv-sm">
     <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-x86_64-release.apk">x86 版本</Button>
-    <span class="ml-md gray">MD5: f13062c48f656e8b8d438edc5c0f0a4c</span>
+    <span class="ml-md gray">MD5: b9bb45b1be24ca2efb9a1fcbcdc8b668</span>
 </div>
 <div class="mv-sm">
     <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-release.apk">通用版本（体积较大）</Button>
-    <span class="ml-md gray">MD5: ebe45f09ef85adec90dfc6bbcabda1b2</span>
+    <span class="ml-md gray">MD5: 6ecf08468ec68879f50d78dc14dfd628</span>
 </div>
 </TabItem>
 

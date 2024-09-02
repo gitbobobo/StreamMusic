@@ -619,6 +619,22 @@ query:
 
 ### scrobble 滚动播放记录
 
+**更新播放进度**
+
+GET: `[host]/:/timeline`
+
+query:
+
+| 参数名 | 备注 |
+| --- | --- |
+| ratingKey | 歌曲ID |
+| time | 播放进度，单位：ms |
+| state | 播放状态，可选值：`playing`, `paused` |
+
+> 此接口不会将歌曲播放次数+1，需要手动调用下面的接口。
+
+**将歌曲标记为已播放**
+
 GET: `[host]/:/scrobble`
 
 query:

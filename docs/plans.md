@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## 正在进行
 
-修复 DLNA 功能
+支持安卓与 iOS 桌面组件
 
 ## 上架 xx 商店
 

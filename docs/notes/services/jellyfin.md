@@ -334,6 +334,12 @@ response:
 }
 ```
 
+### AlbumArtists 获取专辑艺术家列表
+
+GET: `[host]/Artists/AlbumArtists`
+
+其他格式与歌手列表一致。
+
 ### Artists 获取歌手列表
 
 GET: `[host]/Artists`
@@ -1119,6 +1125,61 @@ response:
 :::
 
 ### PlayedItems/[id] 滚动播放记录
+
+**播放开始**
+
+POST：`[host]/Sessions/Playing`
+
+body:
+
+| 参数名 | 备注 |
+| --- | --- |
+| ItemId | 歌曲ID |
+| PlaySessionId | 会话ID |
+| PositionTicks | 播放进度 |
+| IsPaused | 是否暂停 |
+| PlaybackRate | 播放速度 |
+| PlayMethod | 播放方式，可选值：`Transcode`, `DirectPlay`, `DirectStream` |
+
+**播放进度**
+
+POST：`[host]/Sessions/Playing/Progress`
+
+body:
+
+| 参数名 | 备注 |
+| --- | --- |
+| ItemId | 歌曲ID |
+| PlaySessionId | 会话ID |
+| PositionTicks | 播放进度 |
+| IsPaused | 是否暂停 |
+| PlaybackRate | 播放速度 |
+| PlayMethod | 播放方式，可选值：`Transcode`, `DirectPlay`, `DirectStream` |
+
+Emby 文档中对播放进度的报告时机说明如下：
+
+- 每 10 秒自动报告一次（用于校准服务器上的自动进度增量）
+- 在用户于播放器进行任何交互后立即进行
+
+报告进度的原因如下，音流仅会对勾选的事件报告进度：
+
+- [x] TimeUpdate 时间更新
+- [x] Pause 暂停
+- [x] Unpause 取消暂停
+- [ ] VolumeChange 音量变化
+- [ ] RepeatModeChange 重复模式更改
+- [ ] AudioTrackChange 音轨更改
+- [ ] SubtitleTrackChange 字幕更改
+- [ ] PlaylistItemMove 播放列表项移动
+- [ ] PlaylistItemRemove 播放列表项删除
+- [ ] PlaylistItemAdd 播放列表项添加
+- [ ] QualityChange 质量变革
+- [ ] SubtitleOffsetChange 字幕偏移
+- [x] PlaybackRateChange 播放速度改变
+
+**标记为已播放**
+
+> 向 Emby 上报**播放开始**状态时，播放次数已经自动+1，因此无需使用此接口。
 
 POST: `[host]/Users/[UserId]/PlayedItems/[id]`
 
