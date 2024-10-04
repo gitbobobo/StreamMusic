@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-09-02
+更新于：2024-10-04
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 31 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 32 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -18,14 +18,84 @@ import DayCounter from '@site/src/components/DayCounter';
 
 :::
 
-## V1.3.1（2024-09-02）
-
+## V1.3.2（2024-10-04）
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <span class="ml-md gray">MD5: 39d89dca63685ef98c440ca5efd2abeb</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <span class="ml-md gray">MD5: 4fe07080fbe91f4f8b699a3da79c8aa4</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-x86_64-release.apk">x86 版本</Button>
+    <span class="ml-md gray">MD5: 0fff06886b64b713337682793426639a</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-release.apk">通用版本（体积较大）</Button>
+    <span class="ml-md gray">MD5: 99a4b99ed10d2d11e70318d925e30905</span>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/stream_music_1.3.2.6.msix">立即下载</Button>
+    <span class="ml-md gray">MD5: 81cf96d4ee3c6b122eab1456e6a673e3</span>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/StreamMusic_1.3.2.dmg">立即下载</Button>
+    <span class="ml-md gray">MD5: bbad7b8ad5030553dae4357b59a9bab0</span>
+</div>
+</TabItem>
+</Tabs>
+
+更新内容：
+
+- 移动端添加桌面小组件（播放控制与实时歌词）
+- 为设置界面项目添加图标(主题中开启)，并适应各平台风格
+- 播放界面适应亮色风格
+- 支持在应用内切换语言
+- 优化歌手详情页在移动端横屏状态的表现
+- [单曲循环时允许按下一曲切歌](https://github.com/gitbobobo/StreamMusic/issues/487)
+- [AudioStation 支持按音轨号排序](https://github.com/gitbobobo/StreamMusic/issues/525)，新增按音轨号排序方式
+- [稍微增加横屏状态下播放页封面的尺寸](https://github.com/gitbobobo/StreamMusic/issues/448)
+- [重复歌曲数量大于 9 时显示为 9+](https://github.com/gitbobobo/StreamMusic/issues/589)
+- 播放页的歌词选项添加「生成翻译」功能
+- [优化屏幕常亮触发逻辑](https://github.com/gitbobobo/StreamMusic/issues/600)
+- 媒体库模式下，[同年发行的专辑按照专辑名排序](https://github.com/gitbobobo/StreamMusic/issues/476)
+- [媒体库模式使用实时搜索](https://github.com/gitbobobo/StreamMusic/issues/599)
+- 修复 [Windows 端无法搜索到 DLNA 设备的问题](https://github.com/gitbobobo/StreamMusic/issues/578)
+- 修复无法播放DSF格式的问题 #388 #548
+- 优化歌曲缓存逻辑，现已重新支持不转码播放 ogg 格式
+- 修复 [VIVO 系手机不显示通知组件的问题](https://github.com/gitbobobo/StreamMusic/issues/394)
+- 修复安卓通知栏播放按钮无法点击的问题
+- 修复 [Jellyfin 封面不显示](https://github.com/gitbobobo/StreamMusic/issues/535)的问题
+- 修复[切换播放模式后界面未更新](https://github.com/gitbobobo/StreamMusic/issues/537)的问题
+- 修复 Subsonic 直连模式获取不到歌手的歌曲列表的问题
+- 修复 [AudioStation 全部播放随机范围过小](https://github.com/gitbobobo/StreamMusic/issues/526)的问题
+- 修复[播放已下载歌曲无法自动切歌的问题](https://github.com/gitbobobo/StreamMusic/issues/557)
+- 修复[歌单内包含重复歌曲导致无法在启动时恢复播放列表的问题](https://github.com/gitbobobo/StreamMusic/issues/538)
+- 修复 [windows 端无法切换歌单的问题](https://github.com/gitbobobo/StreamMusic/issues/576)
+
+## V1.3.1（2024-09-02）
 
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">

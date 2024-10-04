@@ -34,7 +34,7 @@ sidebar_position: 2
 | 删除接口 | - | | | ✅ | ✅ | ✅ |
 
 
-1. 自 1.2.8 起，音流可读取音乐文件内嵌歌词，详细支持情况[点此查看](/docs/notes/plugins#audio_metadata_reader)。
+1. 自 1.2.8 起，音流开启边听边存后可读取音乐文件内嵌歌词。
 2. Navidrome 若要显示歌手头像，需要配置 Spotify API（国内环境即使配置了也很难有作用），或在歌手文件夹下放一张名为 `artist.*` 的图片。[Artwork location resolution](https://www.navidrome.org/docs/usage/artwork/#artists)
 3. Audio Station 的歌手头像用的是音乐库中的专辑图片。
 4. Audio Station 只能对歌曲评分。

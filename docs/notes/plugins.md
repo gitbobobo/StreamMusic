@@ -62,7 +62,28 @@ sidebar_position: 1
 
 目前一个比较困扰我的问题是如何在打开 CarPlay 时启动 Flutter 引擎，同时保证再从手机上打开 APP 时界面不会卡住。
 
+### flutter_rust_bridge
 
+顾名思义，[flutter_rust_bridge](https://cjycode.com/flutter_rust_bridge/quickstart) 是 flutter 和 rust 之间沟通的桥梁，可以通过脚手架生成 dart 代码和 rust 代码的胶水代码。对于 flutter 应用，可以同时享受到 flutter 和 rust 丰富的插件生态，对于 rust 应用，则可以利用 flutter 在各个平台构建用户交互。
+
+我关注这个项目也已经好久了，但一直没下定决心切换过来，因为我对 rust 语言几乎一无所知，害怕切换后也无法使用。但最近我按照 [这篇文章](https://juejin.cn/post/7363556508603432972) 一点点优化了一下 Windows 端的 SMTC 功能后，也算有了一些[使用心得](./adaptive/smtc)，可以放心地切换过来了。
+
+总的来说，使用 `flutter_rust_bridge` 就是为了使用 rust 丰富的插件库。那么在添加一个 rust 插件之后，基本就是两步走：
+
+```rust title="image.rs"
+// 定义结构体
+pub struct RsImage {}
+// 添加实现
+impl RsImage {
+  pub fn blur(img_path: String) -> Result<Vec<u8>, String> {
+    // 使用对应插件实现功能...
+  }
+}
+```
+
+对于一个 Rust 新手来说，需要了解一下所有权的概念，生命周期的问题可能也会遇到，但我目前的原则是尽量在不标记生命周期的情况下把编译器的报错给消除掉。至少目前作为一个简单的 API Caller，我还没有遇到必须标注生命周期的情况。
+
+相比其他语言，写 Rust 代码确实会让我感到有些别扭，比如捕获异常的方式、可选值的解包、所有权借用之类的问题，但问问 GPT 大部分问题也都能解决。毕竟在多平台享受到了 Rust 的生态，这点苦吃了也无妨哈哈～
 
 ## 网络
 
@@ -74,7 +95,17 @@ dart 的 HTTP 请求是自己实现的，仅适配了标准的 HTTP 请求，处
 
 虽然 dio 目前也已经有了 [native_dio_adapter](https://github.com/cfug/dio/tree/main/plugins/native_dio_adapter) 插件可以通过原生平台发送请求，但只在安卓和 iOS 平台有效，这对于音流来说显然是不够的。
 
-最近新出了个 [rhttp](https://github.com/Tienisto/rhttp)，原理是使用 FRB 插件通过 Rust 发送网络请求，可以观察一段时间，如果稳定的话可能会尝试切换到这个插件上。
+### rhttp(rust)
+
+[rhttp](https://github.com/Tienisto/rhttp) 使用 Rust 端大名鼎鼎的 `reqwest` 来发送网络请求，兼容性自然要比 Dart 自带的 io/http 好上不少。
+
+音流在 1.3.2 版本使用 rhttp 接管了一些网络请求，比如图片获取、歌曲缓存等，目前来看没有太大的问题，兼容性有所提升，可以直接使用系统代理。
+
+如果后续能稳定使用的话，音流整个项目的网络请求将逐步切换至 rhttp，
+
+### rupnp(rust)
+
+[rupnp](https://github.com/jakobhellermann/rupnp) 是 Rust 端的 upnp 包，使用它而非 Dart 端的 [upnp2](https://github.com/daniel-naegele/upnp.dart) 的原因是我使用 dart 端的在 Windows 端无法搜索到 DLNA 设备，而换用 Rust 端的就可以搜索到，非常奇怪。
 
 ### shelf
 
@@ -482,17 +513,26 @@ if (Platform.isAndroid) {
 
 目前支持 Android、iOS、macOS，对 Windows 的支持可以参见我的[魔改版本](https://github.com/gitbobobo/audio_service)，一是加入了安卓状态栏歌词的支持，二是通过 [smtc_windows](https://github.com/KRTirtho/smtc_windows) 插件实现了对 Windows 的媒体通知的支持。
 
-### audio_metadata_reader
+### lofty(rust)
 
-[audio_metadata_reader](https://github.com/ClementBeal/audio_metadata_reader) 是一款用于读取音乐文件标签信息的插件，目前支持以下格式：
+[lofty](https://github.com/Serial-ATA/lofty-rs) 是 Rust 端一款用于读取音乐文件标签信息的插件，目前支持以下格式：
 
-| File Format | Metadata Format(s)      | Read |
-| ----------- | ----------------------- | ---- |
-| MP3         | `ID3v2` `ID3v3` `ID3v4` | ✅   |
-| MP4         | `iTunes-style ilst`     | ✅   |
-| FLAC        | `Vorbis Comments`       | ✅   |
-| OGG         | `Vorbis Comments`       | ✅   |
-| Opus        | `Vorbis Comments`       | ✅   |
+| File Format | Metadata Format(s)           |
+|-------------|------------------------------|
+| AAC (ADTS)  | `ID3v2`, `ID3v1`             |
+| Ape         | `APE`, `ID3v2`\*, `ID3v1`    |
+| AIFF        | `ID3v2`, `Text Chunks`       |
+| FLAC        | `Vorbis Comments`, `ID3v2`\* |
+| MP3         | `ID3v2`, `ID3v1`, `APE`      |
+| MP4         | `iTunes-style ilst`          |
+| MPC         | `APE`, `ID3v2`\*, `ID3v1`\*  |                        
+| Opus        | `Vorbis Comments`            |
+| Ogg Vorbis  | `Vorbis Comments`            |
+| Speex       | `Vorbis Comments`            |
+| WAV         | `ID3v2`, `RIFF INFO`         |
+| WavPack     | `APE`, `ID3v1`               |
+
+\* The tag will be **read only**, due to lack of official support
 
 ## Flutter 社区
 
