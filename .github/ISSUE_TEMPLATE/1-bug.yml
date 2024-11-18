@@ -86,12 +86,14 @@ body:
         - iOS
         - macOS
         - Windows
+        - Android TV
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: connection-type
     attributes:
       label: Connection Type(连接类型)
+      multiple: true
       options:
         - label: Direct Mode(直连模式)
         - label: Library Mode(媒体库模式)

@@ -1,0 +1,37 @@
+name: Feature Request(提交建议)
+description: Complete the form to help us understand your suggestion(填写表单以帮助我们了解您的建议)
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using StreamMusic!
+        感谢您使用音流！
+
+        If you are looking for support, please check out the following resources:
+        如果您正在寻求支持，请查看以下资源：
+
+        - websit: https://music.aqzscn.cn/
+        - email: aqzscn@qq.com
+
+        Before you submit this issue, please make sure you have searched existing issues to ensure your issue is new.
+        在您提交此问题之前，请确保您已经搜索了现有的问题，以确保您的问题是新的。
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion(建议)
+      description: |
+        Please tell us what you would like to see added.
+        请告诉我们您希望添加什么。
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Usage scenario or reason(使用场景或原因)
+      description: |
+        No software can satisfy everyone, and we need to carefully consider the necessity of adding new features.
+        一个软件不可能让所有人都满意，我们需要综合考量添加新功能的必要性。
+
+        So please tell us your usage scenario or reason so that we can better evaluate this suggestion.
+        所以请告诉我们您的使用场景或原因，以便我们更好地评估此建议。
