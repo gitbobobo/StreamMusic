@@ -1,7 +1,6 @@
 name: Bug Report(提交问题)
 description: Complete the form to help us identify the cause(填写表单以帮助我们确定原因)
 labels: ["bug"]
-projects: ["gitbobobo/StreamMusic"]
 body:
   - type: markdown
     attributes:
@@ -105,3 +104,6 @@ body:
       description: |
         Please provide any additional information here, such as logs, screenshots, server deployment method, etc., that will help us locate the problem more quickly.
         请在这里提供任何其他信息，例如日志、截图、服务端部署方式等，这会帮助我们更快地定位问题。
+
+        If necessary, we may need you to provide a test account that is accessible to the public, please send it to aqzscn@qq.com
+        如有必要，我们可能会需要您提供可供公网访问的测试账号，请通过邮件发送给 aqzscn@qq.com
