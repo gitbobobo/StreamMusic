@@ -95,8 +95,8 @@ body:
       label: Connection Type(连接类型)
       multiple: true
       options:
-        - label: Direct Mode(直连模式)
-        - label: Library Mode(媒体库模式)
+        - Direct Mode(直连模式)
+        - Library Mode(媒体库模式)
     validations:
       required: true
   - type: textarea
