@@ -1,0 +1,107 @@
+name: Bug Report(提交问题)
+description: Complete the form to help us identify the cause(填写表单以帮助我们确定原因)
+labels: ["bug"]
+projects: ["gitbobobo/StreamMusic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using StreamMusic!
+        感谢您使用音流！
+
+        If you are looking for support, please check out the following resources:
+        如果您正在寻求支持，请查看以下资源：
+
+        - websit: https://music.aqzscn.cn/
+        - email: aqzscn@qq.com
+
+        Before you submit this issue, please make sure you have searched existing issues to ensure your issue is new.
+        在您提交此问题之前，请确保您已经搜索了现有的问题，以确保您的问题是新的。
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce(重现步骤)
+      description: |
+        Please tell us exactly how to reproduce the problem you are running into.
+        请告诉我们如何准确重现您遇到的问题。
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-results
+    attributes:
+      label: Expected results(预期结果)
+      description: |
+        Please tell us what is expected to happen.
+        请告诉我们预期会发生什么。
+    validations:
+      required: true
+  - type: textarea
+    id: actual-results
+    attributes:
+      label: Actual results(实际结果)
+      description: |
+        Please tell us what is actually happening.
+        请告诉我们实际发生了什么。
+    validations:
+      required: true
+  - type: dropdown
+    id: server-type
+    attributes:
+      label: Server Type(服务器类型)
+      multiple: true
+      options:
+        - Navidrome
+        - Emby
+        - Jellyfin
+        - Plex
+        - AudioStation
+        - Subsonic
+        - Airsonic
+        - Gonic
+        - Music Tag Web
+    validations:
+      required: true
+  - type: input
+    id: server-version
+    attributes:
+      label: Server Version(服务器版本)
+    validations:
+      required: true
+  - type: input
+    id: client-version
+    attributes:
+      label: Client Version(客户端版本)
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System(操作系统)
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - macOS
+        - Windows
+    validations:
+      required: true
+  - type: checkboxes
+    id: connection-type
+    attributes:
+      label: Connection Type(连接类型)
+      options:
+        - label: Direct Mode(直连模式)
+        - label: Library Mode(媒体库模式)
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information(附加信息)
+      description: |
+        Please provide any additional information here, such as logs, screenshots, server deployment method, etc., that will help us locate the problem more quickly.
+        请在这里提供任何其他信息，例如日志、截图、服务端部署方式等，这会帮助我们更快地定位问题。
