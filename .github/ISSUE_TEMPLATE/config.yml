@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: I encountered a problem while using StreamMusic(我在使用音流的过程中遇到了问题)
+    url: https://music.aqzscn.cn/docs/problems
+    about: Check this link for solutions to known issues(查看此链接以获取已知问题的解决方案)
