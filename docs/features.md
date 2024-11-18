@@ -19,43 +19,135 @@ sidebar_position: 3
 
 购买成功后可以绑定邮箱，之后可以通过邮箱验证码恢复购买，目前绑定成功后暂不支持修改，因此请勿使用临时邮箱。
 
-:::info
+## 功能比较
 
-购买按钮下方的小字可以点击，点击后会进入到对应方式的**恢复购买页面**。若您误操作导致重复购买，请及时向对应平台申诉以退款，避免造成损失。
+<table>
+  <tr>
+    <th>功能列表</th>
+    <th>普通用户</th>
+    <th>会员</th>
+    <th>功能列表</th>
+    <th>普通用户</th>
+    <th>会员</th>
+  </tr>
+  <tr>
+    <td colspan="3" class="text-center text-bold">⚡️ 传输与播放</td>
+    <td colspan="3" class="text-center text-bold">🎙️ 歌词</td>
+  </tr>
+  <tr>
+    <td>边听边存</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>歌词显示与编辑</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>自动下载</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>桌面歌词 (Android)</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>下载功能</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td>状态栏歌词 (Android/macOS)</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>扫码同步数据</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>画中画歌词 (iOS)</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>自动播放</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td colspan="3" class="text-center text-bold">📱 系统功能</td>
+  </tr>
+  <tr>
+    <td>定时停止</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>桌面小组件 (Android/iOS)</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>回放增益</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td>迷你窗口 (macOS/Windows)</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>DLNA 播放<sup>1</sup></td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td>全局热键 (macOS/Windows)</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>CarPlay<sup>2</sup></td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td colspan="3" class="text-center text-bold">🎈 个性化</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="text-center text-bold">🌈 外观</td>
+    <td>自定义 API</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>主题切换</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td>自定义内容</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="text-center text-bold">📁 资料库管理</td>
+    <td>长音频偏好</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>多服务器切换</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td>增强手势</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>文件夹视图（媒体库模式）</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td colspan="3" class="text-center text-bold">🪄 其他</td>
+  </tr>
+  <tr>
+    <td>重复歌曲检测（媒体库模式）</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td>备用线路</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+</table>
 
-:::
-
-## 会员功能
-
-|  | 普通用户 | 会员 |
-| --- | --- | --- |
-| 边听边存 |✅|✅|
-| 定时停止 |✅|✅|
-| 自动播放 |✅|✅|
-| 自动下载 |✅|✅|
-| 歌词显示 |✅|✅|
-| 自定义 API |✅|✅|
-| 扫码同步数据 |✅|✅|
-| 桌面小组件 |✅|✅|
-| 文件夹视图 ||✅|
-| 下载功能 ||✅|
-| 回放增益<sup>1</sup> ||✅|
-| 长音频偏好<sup>2</sup> ||✅|
-| 主题切换<sup>3</sup>  ||✅|
-| 歌词配置<sup>4</sup>  ||✅|
-| 增强手势 ||✅|
-| 自定义内容 ||✅|
-| 备用线路 ||✅|
-| DLNA 播放<sup>5</sup> ||✅|
-| CarPlay<sup>6</sup> ||✅|
-| 多服务器切换 ||✅|
-
-1. **回放增益** 功能仅支持能查询到回放增益值的服务端，目前仅限 Navidrome。
-2. 通过**长音频**偏好配置，您可在播放普通音乐时排除长音频，或单独保存长音频的播放进度，以备下次播放时回到原来的进度。
-3. 通过**主题**切换，您可解锁纯色主题（可跟随系统明暗切换）与毛玻璃音乐控制栏，并可将推荐页作为启动时的第一屏。
-4. 通过**歌词**配置，您可开启通知栏组件的歌词通知，并可在安卓端开启桌面歌词或系统级状态栏歌词，在 macOS 开启状态栏歌词。
-5. **DLNA 功能**目前仅可在手机端使用，且兼容性较差，请等待后续更新升级～
-6. 目前 CarPlay 需要手机上打开 APP 才能使用。
+1. DLNA 功能目前兼容性较差，购买会员时请假定此功能不可用。
+2. 目前 CarPlay 需要手机上打开 APP 才能使用。
 
 ## 新版本抢先体验
 

@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-10-04
+更新于：2024-11-17
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 32 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 33 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -18,13 +18,82 @@ import DayCounter from '@site/src/components/DayCounter';
 
 :::
 
-## V1.3.2（2024-10-04）
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.3（2024-11-17）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <span class="ml-md gray">MD5: 010b0ccd625d3f7c872dab9da7502df6</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <span class="ml-md gray">MD5: ae92e104f118c6b6f0a4256003cd8952</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-x86_64-release.apk">x86 版本</Button>
+    <span class="ml-md gray">MD5: 0b44f215d577ecedef30b2e0f715a815</span>
+</div>
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-release.apk">通用版本（体积较大）</Button>
+    <span class="ml-md gray">MD5: f6ff5c17704238315dfa5d82a26f126d</span>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/stream_music_1.3.3.6.msix">立即下载</Button>
+    <span class="ml-md gray">MD5: 2d474371df21c7d8cd1cd75e98f46363</span>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/StreamMusic_1.3.3.dmg">立即下载</Button>
+    <span class="ml-md gray">MD5: d2e1ca2f3b7ac1c2229499ef744565fb</span>
+</div>
+</TabItem>
+</Tabs>
+
+更新内容:
+
+- 👑 桌面端支持迷你窗口
+- 👑 iOS 14.2 及以上版本支持画中画歌词
+- iOS 通知中心组件支持显示收藏按钮
+- 桌面端新增[关闭窗口快捷键](https://github.com/gitbobobo/StreamMusic/issues/627)
+- [桌面端支持全局热键](https://github.com/gitbobobo/StreamMusic/issues/363)，开关位于**帮助 - 快捷键**
+- 多语言支持繁体中文
+- 谷歌翻译接口可配置基础地址
+- [自定义封面接口请求歌曲封面时会附加歌曲路径信息](https://github.com/gitbobobo/StreamMusic/issues/650)
+- 调整安卓设置界面字体大小
+- 媒体库模式在同步数据时可选择手动取消
+- 支持[批量删除重复歌曲](https://github.com/gitbobobo/StreamMusic/issues/680)
+- 优化[虚拟键盘自动隐藏逻辑](https://github.com/gitbobobo/StreamMusic/issues/639)
+- 在不支持的服务端中隐藏文件夹和专辑艺术家的入口
+- 安卓桌面歌词支持宽度调节
+- 修复[安卓桌面歌词无法显示的问题](https://github.com/gitbobobo/StreamMusic/issues/615)
+- 修复[逐字歌词解析问题](https://github.com/gitbobobo/StreamMusic/issues/605)
+- 修复登录页面无法切换 TV 模式的问题
+- 修复 Windows 端歌手详情页文字重叠的问题
+- 修复[定时停止功能中，勾选播完当前歌曲后停止导致功能失效的问题](https://github.com/gitbobobo/StreamMusic/issues/618)
+- 修复安卓耳机线控失效的问题
+- 修复 DLNA 连接小爱音箱时无法更新播放状态的问题
+- 修复切换资料库时首页部分数据未更新的问题
+
+## V1.3.2（2024-10-04）
 
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">

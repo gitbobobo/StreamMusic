@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## 正在进行
 
-桌面歌词功能优化。
+iOS 快捷指令。
 
 ## 上架 xx 商店
 

@@ -62,6 +62,18 @@ sidebar_position: 6
 
 等待歌曲转码完成即可，这是正常现象。
 
+### 移动网络下无法播放
+
+Wi-Fi环境可以播放，但移动网络无法播放时，首先检查资料库地址是否能够通过公网访问。
+
+若网络没有问题，则可能是转码功能异常导致的问题。因为音流在移动网络下为减少流量消耗，默认是转码播放的，若服务端未正确配置 `ffmpeg`，则会导致播放失败。
+
+:::info
+
+个人建议通过 Docker 安装音乐服务端，优点是所有功能开箱即用，不必做额外的配置。
+
+:::
+
 ## 平台相关
 
 ### 安卓通知栏播放控制失效
@@ -76,19 +88,19 @@ sidebar_position: 6
 
 :::
 
+### 安卓播放高码率歌曲闪退
+
+连续点击版本号，在开发者页面中启用 AudioTrack 即可修复。
+
 ### 安卓车载蓝牙歌曲信息不更新或更新有延迟
 
 这似乎发生在安卓手机锁屏之后，目前暂未发现解决办法，具体处理进度参见问题 [Android MediaItem is not updating on car display through bluetooth](https://github.com/ryanheise/audio_service/issues/908)。
 
-### 安卓开启桌面歌词后 Bitwarden 应用内无响应
+### 安卓开启桌面歌词后 Bitwarden 应用内部分区域无法点击
 
-这应该是 Bitwarden 的安全机制导致的，因为识别到了悬浮窗。
+锁定桌面歌词后，正常来说，悬浮窗里的点击事件是可以传递给下面的界面的。
 
-:::info
-
-相关问题：[Android Bitwarden App - controls not working](https://www.reddit.com/r/Bitwarden/comments/x0jmbr/android_bitwarden_app_controls_not_working/)
-
-:::
+可能 Bitwarden 使用了不一样的方式识别点击事件，此时可以先在通知中心解锁或关闭桌面歌词，等操作完成后再恢复。
 
 ### 应用发烫或CPU占用过高
 
@@ -127,6 +139,10 @@ sidebar_position: 6
 ### 恢复购买时提示签名信息错误
 
 大概率是你的设备时间和正常时间相差太大导致的。
+
+### 邮箱格式错误
+
+请手动输入邮箱，避免粘贴时可能多产生的空格和回车等空白字符。
 
 ### 设备数量
 

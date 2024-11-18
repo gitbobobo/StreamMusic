@@ -91,6 +91,7 @@ sidebar_position: 4
 | 歌曲标题（可选） | URL Params | title  | 最终组装地址：https://example.com/covers?title=歌曲标题 |
 | 歌手名           | URL Params | artist |                                                         |
 | 专辑名（可选）   | URL Params | album  |                                                         |
+| 文件路径（可选） | URL Params | path     | 仅查询歌曲封面时存在，1.3.3 版本开始支持 |
 
 通过此接口，音流可控制传递的参数尝试获取不同类型的封面：
 

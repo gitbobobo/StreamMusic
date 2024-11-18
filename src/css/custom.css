@@ -55,3 +55,11 @@
 .gray {
   color: gray;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
