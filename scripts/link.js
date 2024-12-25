@@ -60,26 +60,26 @@ import AndroidIcon from '@mui/icons-material/Android';
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-arm64-v8a-release.apk">ARM64 版本</Button>
     <span class="ml-md gray">MD5: ${androidArm64Md5}</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
     <span class="ml-md gray">MD5: ${androidArmv7Md5}</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-x86_64-release.apk">x86 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-x86_64-release.apk">x86 版本</Button>
     <span class="ml-md gray">MD5: ${androidX86Md5}</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-release.apk">通用版本（体积较大）</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://oss.aqzscn.cn/stream-music/versions/${version}/app-release.apk">通用版本（体积较大）</Button>
     <span class="ml-md gray">MD5: ${androidUniversalMd5}</span>
 </div>
 </TabItem>
 
 <TabItem value="win" label="Windows">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/stream_music_${version}.0.msix">立即下载</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://oss.aqzscn.cn/stream-music/versions/${version}/stream_music_${version}.0.msix">立即下载</Button>
     <span class="ml-md gray">MD5: ${windowsMd5}</span>
 </div>
 
@@ -92,7 +92,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 
 <TabItem value="mac" label="macOS">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/${version}/StreamMusic_${version}.dmg">立即下载</Button>
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://oss.aqzscn.cn/stream-music/versions/${version}/StreamMusic_${version}.dmg">立即下载</Button>
     <span class="ml-md gray">MD5: ${macMd5}</span>
 </div>
 </TabItem>

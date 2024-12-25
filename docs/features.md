@@ -13,11 +13,16 @@ sidebar_position: 3
 - 会员身份可同时在 7 台设备上使用，超出最大数量后，最早登录的设备的会员身份将被取消。
 - 会员验证方式采用**联网验证**，每次启动时随机触发验证，因此请尽量保证设备可以连接到互联网。
 
-## 购买方式
+## 购买及退款方式
 
-仅可在手机端购买，iOS 可通过应用内购买，安卓可通过支付宝购买。
+仅可在手机端购买:
 
-购买成功后可以绑定邮箱，之后可以通过邮箱验证码恢复购买，目前绑定成功后暂不支持修改，因此请勿使用临时邮箱。
+- iOS 可通过 AppStore 购买，购买后 3 个月内可向 AppStore 申请退款（不受开发者控制）。
+- 安卓可通过支付宝购买，购买后 6 个月内可联系 aqzscn@qq.com 申请退款，邮件需包含支付宝订单号。
+
+购买成功后可以绑定邮箱，之后可以在其他设备上通过邮箱验证码恢复购买。
+
+**邮箱绑定成功后暂不支持修改，因此请勿使用临时邮箱**。
 
 ## 功能比较
 
@@ -31,14 +36,13 @@ sidebar_position: 3
     <th>会员</th>
   </tr>
   <tr>
-    <td colspan="3" class="text-center text-bold">⚡️ 传输与播放</td>
-    <td colspan="3" class="text-center text-bold">🎙️ 歌词</td>
+    <td colspan="6" class="text-center text-bold">⚡️ 传输与播放</td>
   </tr>
   <tr>
     <td>边听边存</td>
     <td>✅</td>
     <td>✅</td>
-    <td>歌词显示与编辑</td>
+    <td>自动播放</td>
     <td>✅</td>
     <td>✅</td>
   </tr>
@@ -46,7 +50,15 @@ sidebar_position: 3
     <td>自动下载</td>
     <td>✅</td>
     <td>✅</td>
-    <td>桌面歌词 (Android)</td>
+    <td>定时停止</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>扫码同步数据</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>回放增益</td>
     <td>⭕️</td>
     <td>✅</td>
   </tr>
@@ -54,100 +66,109 @@ sidebar_position: 3
     <td>下载功能</td>
     <td>⭕️</td>
     <td>✅</td>
-    <td>状态栏歌词 (Android/macOS)</td>
+    <td>DLNA 播放<sup>1</sup></td>
     <td>⭕️</td>
     <td>✅</td>
   </tr>
   <tr>
-    <td>扫码同步数据</td>
+    <td colspan="6" class="text-center text-bold">🎙️ 歌词</td>
+  </tr>
+  <tr>
+    <td>歌词显示与编辑</td>
     <td>✅</td>
+    <td>✅</td>
+    <td>桌面歌词 (Android)</td>
+    <td>⭕️</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>状态栏歌词 (Android/macOS)</td>
+    <td>⭕️</td>
     <td>✅</td>
     <td>画中画歌词 (iOS)</td>
     <td>⭕️</td>
     <td>✅</td>
   </tr>
   <tr>
-    <td>自动播放</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td colspan="3" class="text-center text-bold">📱 系统功能</td>
+    <td colspan="6" class="text-center text-bold">📱 系统功能</td>
   </tr>
   <tr>
-    <td>定时停止</td>
-    <td>✅</td>
-    <td>✅</td>
     <td>桌面小组件 (Android/iOS)</td>
     <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>回放增益</td>
-    <td>⭕️</td>
-    <td>✅</td>
-    <td>迷你窗口 (macOS/Windows)</td>
-    <td>⭕️</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>DLNA 播放<sup>1</sup></td>
-    <td>⭕️</td>
     <td>✅</td>
     <td>全局热键 (macOS/Windows)</td>
     <td>✅</td>
     <td>✅</td>
   </tr>
   <tr>
+    <td>迷你窗口 (macOS/Windows)</td>
+    <td>⭕️</td>
+    <td>✅</td>
     <td>CarPlay<sup>2</sup></td>
     <td>⭕️</td>
     <td>✅</td>
-    <td colspan="3" class="text-center text-bold">🎈 个性化</td>
   </tr>
   <tr>
-    <td colspan="3" class="text-center text-bold">🌈 外观</td>
+    <td>快捷指令</td>
+    <td>⭕️</td>
+    <td>✅</td>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="6" class="text-center text-bold">🎈 个性化</td>
+  </tr>
+  <tr>
+    <td>增强手势</td>
+    <td>✅</td>
+    <td>✅</td>
     <td>自定义 API</td>
     <td>✅</td>
     <td>✅</td>
   </tr>
   <tr>
-    <td>主题切换</td>
-    <td>⭕️</td>
-    <td>✅</td>
     <td>自定义内容</td>
     <td>⭕️</td>
     <td>✅</td>
+    <td>主题切换</td>
+    <td>⭕️</td>
+    <td>✅</td>
   </tr>
-  <tr>
-    <td colspan="3" class="text-center text-bold">📁 资料库管理</td>
+   <tr>
     <td>长音频偏好</td>
     <td>⭕️</td>
     <td>✅</td>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="6" class="text-center text-bold">📁 资料库管理</td>
   </tr>
   <tr>
     <td>多服务器切换</td>
     <td>⭕️</td>
     <td>✅</td>
-    <td>增强手势</td>
-    <td>⭕️</td>
-    <td>✅</td>
-  </tr>
-  <tr>
     <td>文件夹视图（媒体库模式）</td>
     <td>⭕️</td>
     <td>✅</td>
-    <td colspan="3" class="text-center text-bold">🪄 其他</td>
   </tr>
   <tr>
     <td>重复歌曲检测（媒体库模式）</td>
     <td>⭕️</td>
     <td>✅</td>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="6" class="text-center text-bold">🪄 其他</td>
+  </tr>
+  <tr>
     <td>备用线路</td>
     <td>⭕️</td>
     <td>✅</td>
+    <td colspan="3"></td>
   </tr>
 </table>
 
 1. DLNA 功能目前兼容性较差，购买会员时请假定此功能不可用。
-2. 目前 CarPlay 需要手机上打开 APP 才能使用。
+2. 通过 CarPlay 及快捷指令播放音乐时，若 APP 尚未打开，之后再次打开 APP 音乐会停止播放。
 
 ## 新版本抢先体验
 

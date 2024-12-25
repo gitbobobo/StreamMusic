@@ -1,12 +1,12 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # 开发计划
 
 ## 正在进行
 
-iOS 快捷指令。
+Navidrome 电台功能。
 
 ## 上架 xx 商店
 

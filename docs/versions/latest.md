@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-11-17
+更新于：2024-12-26
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 33 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 34 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -24,6 +24,65 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.4（2024-12-26）
+
+:::caution
+
+由于每日的下载量逐渐增大，CDN 流量成本已经有些难以承受。今后正式版本的**下载链接将通过网盘或 Github Release 发布**。
+
+很抱歉给您造成的不便，不过请相信这都是暂时的，明年我将把上架安卓应用商店列为首要事项。
+
+:::
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jdws8cj">立即下载</Button>
+    <span class="ml-md gray">密码: bd39</span>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/dfMyb5zg">立即下载</Button>
+    <span class="ml-md gray">MD5: 0312775fa5ab5e7d829bb95ef2f19791</span>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/ZpwybpnX">立即下载</Button>
+    <span class="ml-md gray">MD5: 8f413127e9ba4bc1eb398cdf10a18956</span>
+</div>
+</TabItem>
+</Tabs>
+
+更新内容:
+
+- 👑 iOS 支持快捷指令
+- 移动端首页支持显示用户头像（Emby,Jellyfin,Plex可用）
+- [windows 使用 NotoSansSC-Regular 作为默认字体](https://github.com/gitbobobo/StreamMusic/issues/760)
+- 支持[m4a格式转码播放](https://github.com/gitbobobo/StreamMusic/issues/611)
+- 多线路增加蜂窝网络偏好
+- 应用内添加安卓桌面歌词解锁按钮
+- [增加上滑控制栏打开播放页的开关](https://github.com/gitbobobo/StreamMusic/issues/671)
+- [桌面端图片资源均使用原图](https://github.com/gitbobobo/StreamMusic/issues/721)
+- [CarPlay 艺术家列表支持按字母跳转](https://github.com/gitbobobo/StreamMusic/issues/698)
+- 修复不打开APP无法使用 CarPlay 的问题
+- 修复[创建歌单后，首页数据未刷新](https://github.com/gitbobobo/StreamMusic/issues/725)的问题
+- 修复 [strm 文件无法播放的问题](https://github.com/gitbobobo/StreamMusic/issues/716)
+- 修复[歌手详情专辑排序问题](https://github.com/gitbobobo/StreamMusic/issues/686)
+- 修复 [Jellyfin 无法播放 ipv6 音乐链接的问题](https://github.com/gitbobobo/StreamMusic/issues/756)
+- 修复[无法通过 Emby 的 Last.fm 插件上报播放记录的问题](https://github.com/gitbobobo/StreamMusic/issues/713)
+- 修复 [Windows 端迷你窗口双击后会全屏显示的问题](https://github.com/gitbobobo/StreamMusic/issues/702)
+- 修复[队列结尾无法下一曲到第一首的问题](https://github.com/gitbobobo/StreamMusic/issues/654)
 
 ## V1.3.3（2024-11-17）
 
