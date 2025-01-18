@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2024-12-26
+更新于：2025-01-18
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 34 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 35 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -24,6 +24,51 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.5（2025-01-18）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jdzrvmj">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/Vs50I5BH">立即下载</Button>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/d9D0I5O6">立即下载</Button>
+</div>
+</TabItem>
+</Tabs>
+
+更新内容:
+
+- 支持 [Navidrome的电台功能](https://github.com/gitbobobo/StreamMusic/issues/241)
+- 提升多线路切换速度
+- [歌词页添加粗体效果](https://github.com/gitbobobo/StreamMusic/issues/798)
+- 登录时默认开启直连模式
+- 下拉菜单适配桌面端 UI
+- [桌面端添加屏幕常亮开关，避免一直点亮屏幕](https://github.com/gitbobobo/StreamMusic/issues/790)
+- [Windows 支持同步 SMTC 播放进度](https://github.com/gitbobobo/StreamMusic/issues/722)
+- 修复资料库详情页可能灰屏的问题
+- 修复[媒体库模式获取不到歌单的问题](https://github.com/gitbobobo/StreamMusic/issues/794)
+- 修复[下载歌曲被覆盖的问题](https://github.com/gitbobobo/StreamMusic/issues/781)
+- 修复[切换到无歌词歌曲后，界面依旧显示上一句歌词的问题](https://github.com/gitbobobo/StreamMusic/issues/710)
+- 修复[1970年之前的专辑显示为未知年代的问题](https://github.com/gitbobobo/StreamMusic/issues/674)
+- 修复[安卓桌面歌词拉大最大宽度后闪退的问题](https://github.com/gitbobobo/StreamMusic/issues/750)
+- 修复[CarPlay从歌手列表进入闪退的问题](https://github.com/gitbobobo/StreamMusic/issues/779)
 
 ## V1.3.4（2024-12-26）
 
