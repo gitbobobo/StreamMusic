@@ -32,7 +32,7 @@ sidebar_position: 7
 
 若您的 Navidrome 无法升级，可尝试将 Docker 的环境变量 `ND_DEVOFFSETOPTIMIZE` 设置为大于您曲库数量的数字。
 
-:::info 
+:::info
 
 关联问题：[The retrieval of data fails when sorting by createAt after the number of songs exceeds 50,000.](https://github.com/navidrome/navidrome/issues/3006)
 
@@ -48,13 +48,13 @@ sidebar_position: 7
 
 ### 安卓后台播放自动暂停（没有声音）
 
-步骤1: 音流 - 帮助 - 关闭电池优化
+步骤 1: 音流 - 帮助 - 关闭电池优化
 
-步骤2: 系统应用设置 - 音流 - 流量和联网 - 允许后台联网
+步骤 2: 系统应用设置 - 音流 - 流量和联网 - 允许后台联网
 
 第二步这个后台联网在不同手机可能有不同的叫法和设置位置，比如华为是在电池 - 更多电池设置 - 休眠时始终保持网络连接，请自行探索。
 
-目前已在 魅族20 和华为平板测过这样的配置就可以保持后台播放。
+目前已在 魅族 20 和华为平板测过这样的配置就可以保持后台播放。
 
 ### 播放时总时长一直在更新
 
@@ -64,7 +64,7 @@ sidebar_position: 7
 
 ### 移动网络下无法播放
 
-Wi-Fi环境可以播放，但移动网络无法播放时，首先检查资料库地址是否能够通过公网访问。
+Wi-Fi 环境可以播放，但移动网络无法播放时，首先检查资料库地址是否能够通过公网访问。
 
 若网络没有问题，则可能是转码功能异常导致的问题。因为音流在移动网络下为减少流量消耗，默认是转码播放的，若服务端未正确配置 `ffmpeg`，则会导致播放失败。
 
@@ -88,10 +88,6 @@ Wi-Fi环境可以播放，但移动网络无法播放时，首先检查资料库
 
 :::
 
-### 安卓播放高码率歌曲闪退
-
-连续点击版本号，在开发者页面中启用 AudioTrack 即可修复。
-
 ### 安卓车载蓝牙歌曲信息不更新或更新有延迟
 
 这似乎发生在安卓手机锁屏之后，目前暂未发现解决办法，具体处理进度参见问题 [Android MediaItem is not updating on car display through bluetooth](https://github.com/ryanheise/audio_service/issues/908)。
@@ -102,7 +98,7 @@ Wi-Fi环境可以播放，但移动网络无法播放时，首先检查资料库
 
 可能 Bitwarden 使用了不一样的方式识别点击事件，此时可以先在通知中心解锁或关闭桌面歌词，等操作完成后再恢复。
 
-### 应用发烫或CPU占用过高
+### 应用发烫或 CPU 占用过高
 
 这个属于 Flutter 的优化问题，在界面中存在循环动画时，CPU 占用就会异常的高。
 
@@ -110,7 +106,7 @@ Wi-Fi环境可以播放，但移动网络无法播放时，首先检查资料库
 
 :::info
 
-相关问题：[CPU占用有点高，手机发烫](https://github.com/gitbobobo/StreamMusic/issues/60)
+相关问题：[CPU 占用有点高，手机发烫](https://github.com/gitbobobo/StreamMusic/issues/60)
 
 :::
 

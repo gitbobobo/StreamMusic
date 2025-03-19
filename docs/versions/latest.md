@@ -10,7 +10,7 @@ sidebar_position: 99
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 35 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 36 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -24,6 +24,56 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.6（2025-03-20）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00je8d17e">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/zok0EbV7">立即下载</Button>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](../guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/X4J0EbUt">立即下载</Button>
+</div>
+</TabItem>
+</Tabs>
+
+
+更新内容：
+
+- [适配新版 navidrome 原生接口](https://github.com/gitbobobo/StreamMusic/issues/832)
+- 支持编辑歌单信息
+- 歌单导入导出支持 txt 格式（标题 - 歌手）
+- 小于 3 首歌曲的专辑封面会显示歌曲数量
+- 回放增益支持所有服务端
+- 移除离线模式
+- 应用内添加西班牙语的支持
+- [Apple 平台播放长音频时媒体通知按钮改为快进快退](https://github.com/gitbobobo/StreamMusic/issues/865)
+- [启动应用时自动播放会自动打开播放页](https://github.com/gitbobobo/StreamMusic/issues/878)
+- [增强下一曲、上一曲按钮的视觉反馈](https://github.com/gitbobobo/StreamMusic/issues/837)
+- 提升 Windows 端启动和退出应用时的体验
+- 修复[删除空歌单文件时导致界面卡死的问题](https://github.com/gitbobobo/StreamMusic/issues/843)
+- 修复无法删除最后一个歌单的问题
+- 修复删除歌单中歌曲时会把所有相同歌曲都删掉的问题
+- 修复 post 请求无法自动跟随重定向的问题
+- 修复[没有可以播放的音乐时界面卡死的问题](https://github.com/gitbobobo/StreamMusic/issues/882)
+- 修复 [mtw 相同标题的歌曲使用相同歌词的问题](https://github.com/gitbobobo/StreamMusic/issues/851)
+- 修复[开启回放增益后音量不准确的问题](https://github.com/gitbobobo/StreamMusic/issues/562)
 
 ## V1.3.5（2025-01-18）
 
@@ -55,7 +105,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 
 更新内容:
 
-- 支持 [Navidrome的电台功能](https://github.com/gitbobobo/StreamMusic/issues/241)
+- 支持 [Navidrome 的电台功能](https://github.com/gitbobobo/StreamMusic/issues/241)
 - 提升多线路切换速度
 - [歌词页添加粗体效果](https://github.com/gitbobobo/StreamMusic/issues/798)
 - 登录时默认开启直连模式
@@ -66,9 +116,9 @@ import AndroidIcon from '@mui/icons-material/Android';
 - 修复[媒体库模式获取不到歌单的问题](https://github.com/gitbobobo/StreamMusic/issues/794)
 - 修复[下载歌曲被覆盖的问题](https://github.com/gitbobobo/StreamMusic/issues/781)
 - 修复[切换到无歌词歌曲后，界面依旧显示上一句歌词的问题](https://github.com/gitbobobo/StreamMusic/issues/710)
-- 修复[1970年之前的专辑显示为未知年代的问题](https://github.com/gitbobobo/StreamMusic/issues/674)
+- 修复[1970 年之前的专辑显示为未知年代的问题](https://github.com/gitbobobo/StreamMusic/issues/674)
 - 修复[安卓桌面歌词拉大最大宽度后闪退的问题](https://github.com/gitbobobo/StreamMusic/issues/750)
-- 修复[CarPlay从歌手列表进入闪退的问题](https://github.com/gitbobobo/StreamMusic/issues/779)
+- 修复[CarPlay 从歌手列表进入闪退的问题](https://github.com/gitbobobo/StreamMusic/issues/779)
 
 ## V1.3.4（2024-12-26）
 
@@ -112,15 +162,15 @@ import AndroidIcon from '@mui/icons-material/Android';
 更新内容:
 
 - 👑 iOS 支持快捷指令
-- 移动端首页支持显示用户头像（Emby,Jellyfin,Plex可用）
+- 移动端首页支持显示用户头像（Emby,Jellyfin,Plex 可用）
 - [windows 使用 NotoSansSC-Regular 作为默认字体](https://github.com/gitbobobo/StreamMusic/issues/760)
-- 支持[m4a格式转码播放](https://github.com/gitbobobo/StreamMusic/issues/611)
+- 支持[m4a 格式转码播放](https://github.com/gitbobobo/StreamMusic/issues/611)
 - 多线路增加蜂窝网络偏好
 - 应用内添加安卓桌面歌词解锁按钮
 - [增加上滑控制栏打开播放页的开关](https://github.com/gitbobobo/StreamMusic/issues/671)
 - [桌面端图片资源均使用原图](https://github.com/gitbobobo/StreamMusic/issues/721)
 - [CarPlay 艺术家列表支持按字母跳转](https://github.com/gitbobobo/StreamMusic/issues/698)
-- 修复不打开APP无法使用 CarPlay 的问题
+- 修复不打开 APP 无法使用 CarPlay 的问题
 - 修复[创建歌单后，首页数据未刷新](https://github.com/gitbobobo/StreamMusic/issues/725)的问题
 - 修复 [strm 文件无法播放的问题](https://github.com/gitbobobo/StreamMusic/issues/716)
 - 修复[歌手详情专辑排序问题](https://github.com/gitbobobo/StreamMusic/issues/686)
@@ -256,7 +306,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 - 媒体库模式下，[同年发行的专辑按照专辑名排序](https://github.com/gitbobobo/StreamMusic/issues/476)
 - [媒体库模式使用实时搜索](https://github.com/gitbobobo/StreamMusic/issues/599)
 - 修复 [Windows 端无法搜索到 DLNA 设备的问题](https://github.com/gitbobobo/StreamMusic/issues/578)
-- 修复无法播放DSF格式的问题 #388 #548
+- 修复无法播放 DSF 格式的问题 #388 #548
 - 优化歌曲缓存逻辑，现已重新支持不转码播放 ogg 格式
 - 修复 [VIVO 系手机不显示通知组件的问题](https://github.com/gitbobobo/StreamMusic/issues/394)
 - 修复安卓通知栏播放按钮无法点击的问题
@@ -321,7 +371,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 
 - [DLNA 功能修复](https://github.com/gitbobobo/StreamMusic/issues/254)
 - [Windows 新增任务栏快捷操作与播放进度显示](https://github.com/gitbobobo/StreamMusic/issues/220)
-- 新增专辑艺术家列表（仅Emby和Jellyfin有效，其他服务端等同于歌手列表）
+- 新增专辑艺术家列表（仅 Emby 和 Jellyfin 有效，其他服务端等同于歌手列表）
 - 支持多艺术家跳转(此前默认跳转第一个)
 - 支持[配置代理地址](https://github.com/gitbobobo/StreamMusic/issues/447)
 - 去掉实时搜索逻辑（可能导致搜索时间过长），需按回车键触发搜索
@@ -336,8 +386,8 @@ import AndroidIcon from '@mui/icons-material/Android';
 - 优化重定向歌曲资源的处理逻辑
 - 调整歌词偏移后，按对勾会调用歌词确认接口
 - [调整歌词与翻译的间距](https://github.com/gitbobobo/StreamMusic/issues/474)
-- 同步数据的IP地址现可识别多网卡的IP地址
-- [恢复自定义API保存按钮](https://github.com/gitbobobo/StreamMusic/issues/458)
+- 同步数据的 IP 地址现可识别多网卡的 IP 地址
+- [恢复自定义 API 保存按钮](https://github.com/gitbobobo/StreamMusic/issues/458)
 - [媒体库模式文件夹模糊搜索](https://github.com/gitbobobo/StreamMusic/issues/481)不再对大小写敏感
 - [提升歌手详情页按钮可见性](https://github.com/gitbobobo/StreamMusic/issues/477)
 - 兼容 [macOS Beta 3](https://github.com/gitbobobo/StreamMusic/issues/414)
@@ -360,7 +410,6 @@ import AndroidIcon from '@mui/icons-material/Android';
 - 修复[随机播放歌单内歌曲时随机范围过小](https://github.com/gitbobobo/StreamMusic/issues/530)的问题
 - 修复修改系统时区后歌词不会自动滚动的问题
 - 修复[播放高码率文件可能出现电流声](https://github.com/gitbobobo/StreamMusic/issues/518)的问题
-
 
 ## V1.3.0（2024-07-25）
 
@@ -418,7 +467,7 @@ Mac OS 请暂时不要升级至 Beta 3 版本，会导致音流无法使用。
 
 更新内容：
 
-- [适配安卓TV](https://github.com/gitbobobo/StreamMusic/issues/23)，建议手机上下载安装包后，通过 [localsend](https://github.com/localsend/localsend) 发送给TV端，以便后续更新。
+- [适配安卓 TV](https://github.com/gitbobobo/StreamMusic/issues/23)，建议手机上下载安装包后，通过 [localsend](https://github.com/localsend/localsend) 发送给 TV 端，以便后续更新。
 - 新增扫码同步数据的功能（若无法识别请返回重进换一个二维码）
 - 支持[多服务器切换](https://github.com/gitbobobo/StreamMusic/issues/35)，支持分区选择
 - 支持按流派筛选歌曲/专辑/歌手
@@ -432,7 +481,7 @@ Mac OS 请暂时不要升级至 Beta 3 版本，会导致音流无法使用。
 - 长音频播放页的上一曲下一曲按钮改为快进快退
 - [播放时忽略未完整缓存的歌曲](https://github.com/gitbobobo/StreamMusic/issues/316)
 - [切歌之后如果没有图片，显示默认 Logo](https://github.com/gitbobobo/StreamMusic/issues/305)
-- 调整Windows返回按钮位置
+- 调整 Windows 返回按钮位置
 - [Audio Station 支持选择转码比特率](https://github.com/gitbobobo/StreamMusic/issues/286)
 - 支持 [Jellyfin 的歌词接口](https://github.com/gitbobobo/StreamMusic/issues/289)
 - [Emby/Jellyfin 不校验密码是否填写](https://github.com/gitbobobo/StreamMusic/issues/377)
@@ -441,17 +490,17 @@ Mac OS 请暂时不要升级至 Beta 3 版本，会导致音流无法使用。
 - 修复[媒体库模式评分和收藏操作界面不更新](https://github.com/gitbobobo/StreamMusic/issues/348)的问题
 - 修复自动下载会重复下载歌曲的问题
 - 修复[自定义歌词接口切换歌词失效](https://github.com/gitbobobo/StreamMusic/issues/392)
-- 修复[重新打开app后无法记忆上次播放位置的问题](https://github.com/gitbobobo/StreamMusic/issues/236)
+- 修复[重新打开 app 后无法记忆上次播放位置的问题](https://github.com/gitbobobo/StreamMusic/issues/236)
 - 修复一些卡在加载中提示的情况
 - 修复单曲循环只上报了一次播放记录的问题
 - 修复专辑页面和歌单页面的排序问题，[#301](https://github.com/gitbobobo/StreamMusic/issues/301), [#303](https://github.com/gitbobobo/StreamMusic/issues/303)
-- 修复ogg格式只有第一次能播放的问题（缓存的ogg格式数据有问题，临时处理方式：对所有ogg格式转码后播放）
+- 修复 ogg 格式只有第一次能播放的问题（缓存的 ogg 格式数据有问题，临时处理方式：对所有 ogg 格式转码后播放）
 - 修复[搜索结果页歌曲无法播放的问题](https://github.com/gitbobobo/StreamMusic/issues/297)
 - 修复[流派详情页未筛选数据的问题](https://github.com/gitbobobo/StreamMusic/issues/422)
 - 修复 Emby 可能不显示歌词的问题
 - 修复 [Emby 最近播放和最常播放顺序颠倒](https://github.com/gitbobobo/StreamMusic/issues/376) 的问题
 - 修复 [Audio Station 登录过期后不显示图片，无法播放的问题](https://github.com/gitbobobo/StreamMusic/issues/321)
-- 修复[媒体库模式无法识别MTW的歌手简介的问题](https://github.com/gitbobobo/StreamMusic/issues/311)
+- 修复[媒体库模式无法识别 MTW 的歌手简介的问题](https://github.com/gitbobobo/StreamMusic/issues/311)
 - 修复群晖或 Plex 自动获取的 IP 会重复添加的问题
 - [Android] 修复[关闭系统省电模式后，从任务管理器杀死应用，音乐仍在播放的问题](https://github.com/gitbobobo/StreamMusic/issues/239)
 
