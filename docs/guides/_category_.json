@@ -1,8 +1,8 @@
 {
-  "label": "使用说明",
+  "label": "guides",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "音流安装及使用说明。"
+    "description": "Installation and usage instructions for StreamMusic."
   }
 }

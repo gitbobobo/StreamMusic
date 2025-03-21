@@ -2,19 +2,19 @@
 sidebar_position: 4
 ---
 
-# 自定义 API
+# 自定义 API {#api}
 
 某些情况下，音乐服务提供的接口可能无法返回我们需要的信息，故提供自定义 API，高级用户可以自定义返回内容。
 
-## 鉴权（可选）
+## 鉴权（可选） {#auth}
 
 | 配置项   | 位置           | 键             | 说明 |
 | -------- | -------------- | -------------- | ---- |
 | 授权信息 | Request Header | Authorization |      |
 
-## 接口列表
+## 接口列表 {#list}
 
-### 获取歌词
+### 获取歌词 {#lyrics}
 
 请求方式：GET
 
@@ -47,7 +47,7 @@ sidebar_position: 4
 ]
 ```
 
-### 确认歌词
+### 确认歌词 {#confirm-lyrics}
 
 适用于 1.2.0 及以上版本。
 
@@ -81,7 +81,7 @@ sidebar_position: 4
 
 :::
 
-### 获取封面
+### 获取封面 {#cover}
 
 请求方式：GET
 
@@ -104,7 +104,7 @@ sidebar_position: 4
 文件流。
 
 
-### 歌曲详情
+### 歌曲详情 {#detail}
 
 适用于 1.2.4 及以上版本，用于在浏览器中跳转到音乐服务对应的歌曲链接。
 
@@ -128,9 +128,9 @@ sidebar_position: 4
 /app/media/ff.flac
 ```
 
-## 简易服务
+## 简易服务 {#example}
 
-### 搭配 Nginx 加载同目录下 Lrc 文件 `@ZaneYork`
+### 搭配 Nginx 加载同目录下 Lrc 文件 `@ZaneYork` {#nginx}
 
 APP 内直接配置 API 地址为 `你的服务器地址 + /lyrics/` 即可。
 
@@ -154,7 +154,7 @@ APP 内直接配置 API 地址为 `你的服务器地址 + /lyrics/` 即可。
    }
 ```
 
-### 搭配 php 返回同名 Lrc 文件 `@lingluos`
+### 搭配 php 返回同名 Lrc 文件 `@lingluos` {#php}
 
 在Linux系统上使用php方法返回lrc文件 要求lrc文件和歌曲文件名称完全相同
 

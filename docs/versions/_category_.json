@@ -1,9 +1,9 @@
 {
-  "label": "版本列表",
+  "label": "versions",
   "position": 6,
   "link": {
     "type": "generated-index",
-    "description": "包含历史版本更新说明和安装包下载地址。"
+    "description": "Contains historical version update notes and download links for installation packages."
   },
   "customProps": {
     "reversed": true

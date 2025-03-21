@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Stream Music",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Stream Music's Logo",
+    "description": "The alt text of navbar logo"
+  }
+}

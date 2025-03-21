@@ -1,0 +1,54 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.guides": {
+    "message": "使用说明",
+    "description": "The label for category guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.guides.link.generated-index.description": {
+    "message": "音流安装及使用说明。",
+    "description": "The generated-index page description for category guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.tips": {
+    "message": "实用技巧",
+    "description": "The label for category tips in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.tips.link.generated-index.description": {
+    "message": "光有好剑是不够的，你还需要好的剑谱。",
+    "description": "The generated-index page description for category tips in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.versions": {
+    "message": "版本列表",
+    "description": "The label for category versions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.versions.link.generated-index.description": {
+    "message": "包含历史版本更新说明和安装包下载地址。",
+    "description": "The generated-index page description for category versions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.developmentNotes": {
+    "message": "开发笔记",
+    "description": "The label for category developmentNotes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.developmentNotes.link.generated-index.description": {
+    "message": "音流开发过程的经验分享，随缘记录。",
+    "description": "The generated-index page description for category developmentNotes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.musicServices": {
+    "message": "音乐服务",
+    "description": "The label for category musicServices in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.musicServices.link.generated-index.description": {
+    "message": "记录音流用到的一些音乐服务接口（非全部接口，仅记录与音乐相关的），一是方便自己查阅，二是可以让有需要的人少走些弯路。可能有些地方理解不到位，欢迎大家指正和补充。",
+    "description": "The generated-index page description for category musicServices in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.adaptation": {
+    "message": "功能适配",
+    "description": "The label for category adaptation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.adaptation.link.generated-index.description": {
+    "message": "音流开发过程的经验分享，随缘记录。",
+    "description": "The generated-index page description for category adaptation in sidebar tutorialSidebar"
+  }
+}

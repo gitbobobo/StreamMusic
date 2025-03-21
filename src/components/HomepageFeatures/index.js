@@ -1,40 +1,43 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import Translate, { translate } from "@docusaurus/Translate";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: '易于使用',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: translate({ message: "Easy to Use" }),
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
-      <>
-        精心设计的操作界面，让您可以快速上手。
-      </>
+      <Translate>
+        Carefully designed interface allows you to get started quickly
+      </Translate>
     ),
   },
   {
-    title: '专注于音乐',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: translate({ message: "Focus on Music" }),
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
-      <>
-        支持常见的音乐服务，让您可以通过一个客户端访问多种音乐服务。
-      </>
+      <Translate>
+        Supports common music services, allowing you to access multiple music
+        services through one client
+      </Translate>
     ),
   },
   {
-    title: '跨平台支持',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: translate({ message: "Cross-Platform Support" }),
+    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
-      <>
-        可在 Android、iOS、macOS 和 Windows 上使用，并提供与平台一致的体验。
-      </>
+      <Translate>
+        Available on Android, iOS, macOS, and Windows, providing a consistent
+        experience across platforms
+      </Translate>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# 安装
+# 安装 {#installation}
 
 Android 和 Windows 安装教程，最新安装包可在[这里](../versions/latest)找到。
 
-## Android
+## Android {#android}
 
 Android 一共提供四个安装包，分别对应不同的芯片架构。
 
@@ -18,7 +18,7 @@ Android 一共提供四个安装包，分别对应不同的芯片架构。
 
 :::
 
-## Windows
+## Windows {#windows}
 
 Windows 版音流目前只提供 x64 架构的 msix 格式安装包，这是微软应用商店的安装格式，因此在商店外安装，需要先在电脑上安装开发者对应的证书。
 
@@ -27,7 +27,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 <Button variant="contained" startIcon={<DownloadIcon />} href="https://oss.aqzscn.cn/stream-music/stream_music_win.crt">音流证书</Button>
 
-### 一、标准安装方式
+### 一、标准安装方式 {#standard}
 
 双击证书文件开始安装，安装位置选择`本地计算机`。
 
@@ -45,7 +45,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 安装完成后，以后就可以直接双击 `msix` 格式的安装包进行安装了。
 
-### 二、非标准安装方式
+### 二、非标准安装方式 {#legacy}
 
 msix 格式对系统的要求较高，需要 win10 以上才可使用，对于还停留在 win7 或 win8 的用户，可通过此种方式安装。
 

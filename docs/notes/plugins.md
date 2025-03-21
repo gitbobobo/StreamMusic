@@ -8,7 +8,7 @@ sidebar_position: 1
 
 如果您觉得音流的某个功能帮到了您，可以考虑为这些项目点亮 🌟 或提供支持。
 
-## 界面
+## 界面 {#ui}
 
 ### macos_ui
 
@@ -32,7 +32,7 @@ sidebar_position: 1
 
 ![](https://oss.aqzscn.cn/resource/blog/img/2024/faae1-9ad0cf3582cd7ff590b3e02645f19bc7.png)
 
-## 平台特性
+## 平台特性 {#platform}
 
 ### macos_window_utils
 
@@ -85,7 +85,7 @@ impl RsImage {
 
 相比其他语言，写 Rust 代码确实会让我感到有些别扭，比如捕获异常的方式、可选值的解包、所有权借用之类的问题，但问问 GPT 大部分问题也都能解决。毕竟在多平台享受到了 Rust 的生态，这点苦吃了也无妨哈哈～
 
-## 网络
+## 网络 {#network}
 
 ### dio
 
@@ -125,7 +125,7 @@ dart 的 HTTP 请求是自己实现的，仅适配了标准的 HTTP 请求，处
 
 [url_launcher](https://pub.dev/packages/url_launcher) 可用于在浏览器中打开链接。
 
-## 音频
+## 音频 {#audio}
 
 ### media_kit
 
@@ -534,7 +534,7 @@ if (Platform.isAndroid) {
 
 \* The tag will be **read only**, due to lack of official support
 
-## Flutter 社区
+## Flutter 社区 {#community}
 
 ### Flutter Candies
 

@@ -1,0 +1,54 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.guides.link.generated-index.description": {
+    "message": "Installation and usage instructions for StreamMusic.",
+    "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.tips": {
+    "message": "Tips",
+    "description": "The label for category Tips in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.tips.link.generated-index.description": {
+    "message": "Having a good sword is not enough; you also need a good sword manual.",
+    "description": "The generated-index page description for category Tips in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.versions": {
+    "message": "Versions",
+    "description": "The label for category Versions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.versions.link.generated-index.description": {
+    "message": "Contains historical version update notes and download links for installation packages.",
+    "description": "The generated-index page description for category Versions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.developmentNotes": {
+    "message": "Notes",
+    "description": "The label for category developmentNotes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.developmentNotes.link.generated-index.description": {
+    "message": "Experience sharing during the development of StreamMusic.",
+    "description": "The generated-index page description for category developmentNotes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.musicServices": {
+    "message": "Music Services",
+    "description": "The label for category Music Services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.musicServices.link.generated-index.description": {
+    "message": "Documenting some of the music service APIs used by Yinliu (not all APIs, only those related to music). This is to facilitate my own reference and to help others avoid some pitfalls. There may be some misunderstandings, and corrections and additions are welcome.",
+    "description": "The generated-index page description for category musicServices in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.adaptation": {
+    "message": "Adaptation",
+    "description": "The label for category Adaptation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.adaptation.link.generated-index.description": {
+    "message": "Experience sharing during the development of StreamMusic.",
+    "description": "The generated-index page description for category Adaptation in sidebar tutorialSidebar"
+  }
+}

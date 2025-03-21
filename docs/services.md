@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# 音乐服务
+# 音乐服务 {#services}
 
 就我个人使用体验来讲，目前并不存在完美的音乐服务，它们各有优缺点，需要根据自己的需求酌情选择。
 
-## 支持版本
+## 支持版本 {#versions}
 
 - Navidrome 0.49.3 及以上
 - Plex 1.29.2 及以上，支持 OTP 验证码登录，暂不支持登陆到共享音乐库
@@ -15,7 +15,7 @@ sidebar_position: 2
 - Jellyfin 10.8.10 及以上
 - Subsonic 1.15.0 及以上
 
-## 功能比较
+## 功能比较 {#comparison}
 
 `-` 未知
 

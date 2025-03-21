@@ -1,8 +1,8 @@
 {
-  "label": "实用技巧",
+  "label": "tips",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "光有好剑是不够的，你还需要好的剑谱。"
+    "description": "Having a good sword is not enough; you also need a good sword manual."
   }
 }

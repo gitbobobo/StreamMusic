@@ -2,15 +2,15 @@
 sidebar_position: 5
 ---
 
-# CarPlay
+# CarPlay {#carplay}
 
-## 歌词显示
+## 歌词显示 {#lyrics}
 
 苹果出于安全考量，是不允许在 CarPlay 中显示歌词的。
 
 因此音流能做的就是只显示单行歌词，此功能需要开启「歌词 - 歌词通知」开关。
 
-## 使用限制
+## 使用限制 {#limitation}
 
 在当前版本，必须在手机上打开音流才能使用 CarPlay。
 
