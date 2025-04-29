@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Seeing others share ​**annual music reports** at year-end while you have none? Don't worry! You can record your listening history through Last.FM and happily share your stats with friends later～
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/8e26c-0835da59547fd34cc652db034d977f09.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/8e26c-0835da59547fd34cc652db034d977f09.png)
 
 Since StreamMusic isn't open-source, direct Last.FM integration might pose copyright risks. This guide demonstrates server-side configuration instead.
 
@@ -22,7 +22,7 @@ Register at https://www.last.fm/. ​**QQ email addresses may fail registration*
 
 Enable Last.FM scrobbling in Navidrome's web interface:
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/b269c-862548c7f7e351f285de76a02c0b8389.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/b269c-862548c7f7e351f285de76a02c0b8389.png)
 
 ## Report Plays via Emby {#emby}
 
@@ -30,4 +30,4 @@ Enable Last.FM scrobbling in Navidrome's web interface:
 2. Restart server.
 3. Configure via sidebar settings:
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/58760-e43cba8065b629dfcf3285068d40d7eb.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/58760-e43cba8065b629dfcf3285068d40d7eb.png)

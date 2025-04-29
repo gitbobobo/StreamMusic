@@ -6,7 +6,7 @@ sidebar_position: 1
 
 音流是一款 **NAS 音乐播放器**，可以连接到您部署在 NAS 上的**音乐服务**<sup>1</sup>，能让您在**不同平台**<sup>2</sup>享受一致的音乐盛宴。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
 
 1. 目前支持的音乐服务: Subsonic,Navidrome,Emby,Jellyfin,AudioStation,Plex.
 2. 目前支持的平台: Android 6.0, iOS 14, macOS 10.14, Windows 10.
@@ -50,4 +50,4 @@ Windows 版安装包是 msix 格式，安装方法[点此](./guides/install)查�
 
 关注公众号可接收最新版本的通知：
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/5645e-8796c787d6453480d3e7ac250bfdd930.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/5645e-8796c787d6453480d3e7ac250bfdd930.png)

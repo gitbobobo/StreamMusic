@@ -16,13 +16,13 @@ Currently, **Emby, Jellyfin, and Plex** support multiple media libraries (partit
 ## List Elements {#list}
 
 - **Green index numbers** indicate unplayed tracks (useful for audiobook progress tracking).  
-  ![](https://oss.aqzscn.cn/resource/blog/img/2024/90011-293fd6ac80a1ce9bc85adf176c807e19.png)
+  ![](https://oss2.aqzscn.cn/resource/blog/img/2024/90011-293fd6ac80a1ce9bc85adf176c807e19.png)
 
 - **Track numbers** in album lists show disc number (top-right) and track order (index).  
-  ![](https://oss.aqzscn.cn/resource/blog/img/2024/90642-5882f5ffcf3b92988a49aaa5dac913c3.png)
+  ![](https://oss2.aqzscn.cn/resource/blog/img/2024/90642-5882f5ffcf3b92988a49aaa5dac913c3.png)
 
 - **Wrench icon** in artist lists indicates duplicate files.  
-  ![](https://oss.aqzscn.cn/resource/blog/img/2024/7ec2a-423ad72f94ace289a7d801936d02e3f6.png)
+  ![](https://oss2.aqzscn.cn/resource/blog/img/2024/7ec2a-423ad72f94ace289a7d801936d02e3f6.png)
 
 ## Cross-Device Configuration Sync {#qr}
 

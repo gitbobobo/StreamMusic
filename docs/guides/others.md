@@ -19,15 +19,15 @@ sidebar_position: 5
 
 绿色序号表示您从未听过这首歌，这在听有声书时会比较有用。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/90011-293fd6ac80a1ce9bc85adf176c807e19.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/90011-293fd6ac80a1ce9bc85adf176c807e19.png)
 
 在某个专辑的歌曲列表中，序号指的是音轨号，而右上角的数字表示碟号。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/90642-5882f5ffcf3b92988a49aaa5dac913c3.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/90642-5882f5ffcf3b92988a49aaa5dac913c3.png)
 
 歌手列表右侧的扳手图标表示此歌手名下存在重复文件。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/7ec2a-423ad72f94ace289a7d801936d02e3f6.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/7ec2a-423ad72f94ace289a7d801936d02e3f6.png)
 
 ## 设备间同步配置信息 {#qr}
 

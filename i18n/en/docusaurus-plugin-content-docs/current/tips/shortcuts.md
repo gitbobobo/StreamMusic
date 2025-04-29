@@ -28,7 +28,7 @@ Stream Music provides granular shortcut actions for personalized workflows:
 ## Examples {#example}
 
 **Play My Favorite Music**  
-![](https://oss.aqzscn.cn/resource/blog/img/2024/f0825-b5659c5bff07fbad19554d9120cdbd7a.jpg)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/f0825-b5659c5bff07fbad19554d9120cdbd7a.jpg)
 
 **Play Bedtime Stories**  
-![](https://oss.aqzscn.cn/resource/blog/img/2024/81994-6b0a809dcf8d1dab42b8f2ca55f72d7f.jpg)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/81994-6b0a809dcf8d1dab42b8f2ca55f72d7f.jpg)

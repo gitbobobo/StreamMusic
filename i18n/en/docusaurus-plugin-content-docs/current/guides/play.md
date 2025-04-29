@@ -11,11 +11,13 @@ Stream Music's playback logic differs slightly from common music apps, incorpora
 
 By default, Stream Music uses **Queue Playback**. Enable the loop switch to apply looping to both queue and shuffle modes.
 
-![](https://oss.aqzscn.cn//resource/blog/img/2023/860419a28223c06c03964ff34a5a8668.png)
+![](https://oss2.aqzscn.cn//resource/blog/img/2023/860419a28223c06c03964ff34a5a8668.png)
+
+### Shuffle Play {#random}
 
 When selecting songs from a list, queue playback is the default behavior.
 
-![](https://oss.aqzscn.cn//resource/blog/img/2023/e3f0f7469a58b3955598f8965eeef658.png)
+![](https://oss2.aqzscn.cn//resource/blog/img/2023/e3f0f7469a58b3955598f8965eeef658.png)
 
 If the list header includes the following buttons:  
 - Click the **circle icon** to jump to the current track.  
@@ -32,9 +34,19 @@ For paginated lists: If no matching track exists on the current page, scrolling 
 **Playback mode changes from song lists are saved per list type.**  
 Changes from the playback queue or player page are temporary and session-only.
 
+### Music Roaming {#roaming}
+
+Tired of having a large music collection but struggling to discover new tracks?
+
+While Daily Recommendations help, we often lack dedicated time for music exploration. The new "Music Roaming" feature (v1.3.7) solves this by seamlessly blending discovery with regular listening.
+
+How it works: During shuffle playback of ​​Favorite Songs​​, StreamMusic periodically injects similar tracks from the music library into your queue. This allows natural discovery of new music that aligns with your tastes while enjoying familiar favorites.
+
+> May your music journey never grow stale!
+
 ## Playback Controls {#control}
 
-![](https://oss.aqzscn.cn//resource/blog/img/2023/15d11e29bb8e27f58378743eb86f6fd0.png)
+![](https://oss2.aqzscn.cn//resource/blog/img/2023/15d11e29bb8e27f58378743eb86f6fd0.png)
 
 Control bar features:  
 - Tap the cover to play/pause.  

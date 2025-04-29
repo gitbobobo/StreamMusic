@@ -25,13 +25,13 @@ Windows 版音流目前只提供 x64 架构的 msix 格式安装包，这是微�
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 
-<Button variant="contained" startIcon={<DownloadIcon />} href="https://oss.aqzscn.cn/stream-music/stream_music_win.crt">音流证书</Button>
+<Button variant="contained" startIcon={<DownloadIcon />} href="http://download.aqzscn.cn/stream_music_win.crt">音流证书</Button>
 
 ### 一、标准安装方式 {#standard}
 
 双击证书文件开始安装，安装位置选择`本地计算机`。
 
-![Snipaste_2023-12-29_20-37-44](https://oss.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-37-44.png)
+![Snipaste_2023-12-29_20-37-44](https://oss2.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-37-44.png)
 
 下一步，将证书存储到`受信任的根证书颁发机构中`。
 
@@ -41,7 +41,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 :::
 
-![Snipaste_2023-12-29_20-39-16](https://oss.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-39-16.png)
+![Snipaste_2023-12-29_20-39-16](https://oss2.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-39-16.png)
 
 安装完成后，以后就可以直接双击 `msix` 格式的安装包进行安装了。
 
@@ -57,8 +57,8 @@ win7 由于缺少较多依赖，且 Flutter 官方已不再支持，不建议尝
 
 首先下载音流 msix 格式的安装包，使用任意压缩软件打开：
 
-![Snipaste_2023-12-29_20-46-42](https://oss.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-46-42.png)
+![Snipaste_2023-12-29_20-46-42](https://oss2.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-46-42.png)
 
 把压缩包内的文件全部解压到你想要安装的位置，然后通过 `stream_music.exe` 打开软件即可。
 
-![Snipaste_2023-12-29_20-49-22](https://oss.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-49-22.png)
+![Snipaste_2023-12-29_20-49-22](https://oss2.aqzscn.cn/halo/2023/Snipaste_2023-12-29_20-49-22.png)

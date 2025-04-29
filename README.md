@@ -4,7 +4,7 @@
 
 简体中文 | [English](./README_en.md)
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
 
 本项目非开源项目。
 

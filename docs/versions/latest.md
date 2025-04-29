@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2025-01-18
+更新于：2025-04-29
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 36 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 37 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -24,6 +24,52 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.7（2025-04-28）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jecf93e">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CWdZ0MgJ">立即下载</Button>
+</div>
+
+:::caution
+
+若安装失败请查看[安装教程](/docs/guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/sXJZ0MF0">立即下载</Button>
+</div>
+</TabItem>
+</Tabs>
+
+更新内容：
+
+- 新增[音乐漫游](/docs/guides/play#roaming)功能
+- 新增[备用线路音质配置功能](https://github.com/gitbobobo/StreamMusic/issues/587)
+- 新增歌词通知提前量配置
+- 新增[软件内音量记忆功能](https://github.com/gitbobobo/StreamMusic/issues/931)
+- [支持 Jellyfin 的私人歌单](https://github.com/gitbobobo/StreamMusic/issues/888)
+- 支持平板模式和 TV 模式互相切换
+- [支持播放 m3u8 电台](https://github.com/gitbobobo/StreamMusic/issues/883)（Windows 端不可用）
+- 帮助页面增加 mpv 配置
+- 优化[非同步歌词显示问题](https://github.com/gitbobobo/StreamMusic/issues/902)
+- 优化[播放页非方形封面显示效果](https://github.com/gitbobobo/StreamMusic/issues/825)
+- 优化自定义背景图片的性能表现
+- [增加平板模式下歌词按钮底部边距](https://github.com/gitbobobo/StreamMusic/issues/890)
+- [提升 Windows 端软件启动和退出速度](https://github.com/gitbobobo/StreamMusic/issues/916)
+- 修复 navidrome 无法跳转歌手页的问题
+- 修复[搜索结果无法全选加入歌单](https://github.com/gitbobobo/StreamMusic/issues/961)的问题
 
 ## V1.3.6（2025-03-20）
 
@@ -41,7 +87,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 
 :::caution
 
-若安装失败请查看[安装教程](../guides/install)
+若安装失败请查看[安装教程](/docs/guides/install)
 
 :::
 </TabItem>
@@ -91,7 +137,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 
 :::caution
 
-若安装失败请查看[安装教程](../guides/install)
+若安装失败请查看[安装教程](/docs/guides/install)
 
 :::
 </TabItem>
@@ -146,7 +192,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 
 :::caution
 
-若安装失败请查看[安装教程](../guides/install)
+若安装失败请查看[安装教程](/docs/guides/install)
 
 :::
 </TabItem>
@@ -184,39 +230,39 @@ import AndroidIcon from '@mui/icons-material/Android';
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.3/app-arm64-v8a-release.apk">ARM64 版本</Button>
     <span class="ml-md gray">MD5: 010b0ccd625d3f7c872dab9da7502df6</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.3/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
     <span class="ml-md gray">MD5: ae92e104f118c6b6f0a4256003cd8952</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-x86_64-release.apk">x86 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.3/app-x86_64-release.apk">x86 版本</Button>
     <span class="ml-md gray">MD5: 0b44f215d577ecedef30b2e0f715a815</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/app-release.apk">通用版本（体积较大）</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.3/app-release.apk">通用版本（体积较大）</Button>
     <span class="ml-md gray">MD5: f6ff5c17704238315dfa5d82a26f126d</span>
 </div>
 </TabItem>
 
 <TabItem value="win" label="Windows">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/stream_music_1.3.3.6.msix">立即下载</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.3/stream_music_1.3.3.6.msix">立即下载</Button>
     <span class="ml-md gray">MD5: 2d474371df21c7d8cd1cd75e98f46363</span>
 </div>
 
 :::caution
 
-若安装失败请查看[安装教程](../guides/install)
+若安装失败请查看[安装教程](/docs/guides/install)
 
 :::
 </TabItem>
 
 <TabItem value="mac" label="macOS">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.3/StreamMusic_1.3.3.dmg">立即下载</Button>
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.3/StreamMusic_1.3.3.dmg">立即下载</Button>
     <span class="ml-md gray">MD5: d2e1ca2f3b7ac1c2229499ef744565fb</span>
 </div>
 </TabItem>
@@ -252,39 +298,39 @@ import AndroidIcon from '@mui/icons-material/Android';
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.2/app-arm64-v8a-release.apk">ARM64 版本</Button>
     <span class="ml-md gray">MD5: 39d89dca63685ef98c440ca5efd2abeb</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.2/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
     <span class="ml-md gray">MD5: 4fe07080fbe91f4f8b699a3da79c8aa4</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-x86_64-release.apk">x86 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.2/app-x86_64-release.apk">x86 版本</Button>
     <span class="ml-md gray">MD5: 0fff06886b64b713337682793426639a</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/app-release.apk">通用版本（体积较大）</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.2/app-release.apk">通用版本（体积较大）</Button>
     <span class="ml-md gray">MD5: 99a4b99ed10d2d11e70318d925e30905</span>
 </div>
 </TabItem>
 
 <TabItem value="win" label="Windows">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/stream_music_1.3.2.6.msix">立即下载</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.2/stream_music_1.3.2.6.msix">立即下载</Button>
     <span class="ml-md gray">MD5: 81cf96d4ee3c6b122eab1456e6a673e3</span>
 </div>
 
 :::caution
 
-若安装失败请查看[安装教程](../guides/install)
+若安装失败请查看[安装教程](/docs/guides/install)
 
 :::
 </TabItem>
 
 <TabItem value="mac" label="macOS">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.2/StreamMusic_1.3.2.dmg">立即下载</Button>
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.2/StreamMusic_1.3.2.dmg">立即下载</Button>
     <span class="ml-md gray">MD5: bbad7b8ad5030553dae4357b59a9bab0</span>
 </div>
 </TabItem>
@@ -323,39 +369,39 @@ import AndroidIcon from '@mui/icons-material/Android';
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.1/app-arm64-v8a-release.apk">ARM64 版本</Button>
     <span class="ml-md gray">MD5: dd95dadfc5e0da5390a56a4c2333b529</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.1/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
     <span class="ml-md gray">MD5: c6cc33ba5efa185d3daea8f62bdf399a</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-x86_64-release.apk">x86 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.1/app-x86_64-release.apk">x86 版本</Button>
     <span class="ml-md gray">MD5: be12b8d86a1d9867c6b2b6cfbddcee47</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/app-release.apk">通用版本（体积较大）</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.1/app-release.apk">通用版本（体积较大）</Button>
     <span class="ml-md gray">MD5: 4e8d8000211401a7f1aa5f36a63ef0c7</span>
 </div>
 </TabItem>
 
 <TabItem value="win" label="Windows">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/stream_music_1.3.1.5.msix">立即下载</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.1/stream_music_1.3.1.5.msix">立即下载</Button>
     <span class="ml-md gray">MD5: 9eb42a5d0d3730034ec76030dee86bb9</span>
 </div>
 
 :::caution
 
-若安装失败请查看[安装教程](../guides/install)
+若安装失败请查看[安装教程](/docs/guides/install)
 
 :::
 </TabItem>
 
 <TabItem value="mac" label="macOS">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.1/StreamMusic_1.3.1.dmg">立即下载</Button>
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.1/StreamMusic_1.3.1.dmg">立即下载</Button>
     <span class="ml-md gray">MD5: 156a5e98e00c9e0287f36169be4cbf38</span>
 </div>
 
@@ -426,26 +472,26 @@ import AndroidIcon from '@mui/icons-material/Android';
 <Tabs groupId="operating-systems">
 <TabItem value="android" label="Android">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-arm64-v8a-release.apk">ARM64 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.0/app-arm64-v8a-release.apk">ARM64 版本</Button>
     <span class="ml-md gray">MD5: 1cddbc720c19dde02d9d50d9a2106c35</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.0/app-armeabi-v7a-release.apk">ARMV7 版本</Button>
     <span class="ml-md gray">MD5: 445eaba3783884ddb4207e99947ebd52</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-x86_64-release.apk">x86 版本</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.0/app-x86_64-release.apk">x86 版本</Button>
     <span class="ml-md gray">MD5: b9bb45b1be24ca2efb9a1fcbcdc8b668</span>
 </div>
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/app-release.apk">通用版本（体积较大）</Button>
+    <Button variant="contained" startIcon={<AndroidIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.0/app-release.apk">通用版本（体积较大）</Button>
     <span class="ml-md gray">MD5: 6ecf08468ec68879f50d78dc14dfd628</span>
 </div>
 </TabItem>
 
 <TabItem value="win" label="Windows">
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/stream_music_1.3.0.5.msix">立即下载</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.0/stream_music_1.3.0.5.msix">立即下载</Button>
     <span class="ml-md gray">MD5: 94a7f1c000e033c59fbed040590bb94c</span>
 </div>
 </TabItem>
@@ -459,7 +505,7 @@ Mac OS 请暂时不要升级至 Beta 3 版本，会导致音流无法使用。
 :::
 
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss.aqzscn.cn/stream-music/versions/1.3.0/音流v1.3.0.dmg">立即下载</Button>
+    <Button variant="contained" startIcon={<AppleIcon />} href="https://oss2.aqzscn.cn/stream-music/versions/1.3.0/音流v1.3.0.dmg">立即下载</Button>
     <span class="ml-md gray">MD5: c622937c89b16df5eb510b129e1dd3c8</span>
 </div>
 </TabItem>

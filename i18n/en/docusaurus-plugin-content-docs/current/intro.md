@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Stream Music is a **NAS music player** that connects to **music services**<sup>1</sup> deployed on your NAS, allowing you to enjoy a consistent music experience across **multiple platforms**<sup>2</sup>.
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/60b87-ca3fefb87f148b5c03ecf069fb1f95ab.png)
 
 1. Currently supported music services: Subsonic, Navidrome, Emby, Jellyfin, AudioStation, Plex.
 2. Currently supported platforms: Android 6.0, iOS 14, macOS 10.14, Windows 10.
@@ -49,4 +49,4 @@ Please submit your feedback via GitHub Issues.
 
 Follow our official account to receive updates about new releases:
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/5645e-8796c787d6453480d3e7ac250bfdd930.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/5645e-8796c787d6453480d3e7ac250bfdd930.png)

@@ -111,7 +111,7 @@ Applicable to version 1.2.4 and above. Used to redirect to the music service's s
 
 Example configuration:
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/891a6-5de6d34514b48759827b9e08e0236602.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/891a6-5de6d34514b48759827b9e08e0236602.png)
 
 **Path Replacement**  
 Used when your music service is deployed via Docker: the detected path might differ from the actual music file path. By replacing the first matching string through ​**Path Replacement**, it can be converted to a path recognizable by the Docker service, i.e.:

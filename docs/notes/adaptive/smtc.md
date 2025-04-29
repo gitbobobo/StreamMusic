@@ -122,7 +122,7 @@ scripts:
 
 迁移完成后，使用 `melos bs` 命令引导一下项目，这个命令会安装所有包依赖项，并将所有本地包链接在一起，而且在 `melos.yaml` 中定义的脚本命令也会直接出现在 Android Studio 的运行配置中。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/2877c-551314d6ad5cb4871c61dd880b232e37.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/2877c-551314d6ad5cb4871c61dd880b232e37.png)
 
 ## 适配 SMTC
 

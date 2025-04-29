@@ -16,7 +16,7 @@ sidebar_position: 1
 
 [点此查看](https://macosui.github.io/macos_ui/#/)在线演示。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/84187-8f40569512f26dedc256e709c73a4de9.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/84187-8f40569512f26dedc256e709c73a4de9.png)
 
 ### fluent_ui
 
@@ -24,13 +24,13 @@ sidebar_position: 1
 
 [点此查看](https://bdlukaa.github.io/fluent_ui/)在线演示。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/65e8d-fc810c37b1bd57ddc5161705e21c8343.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/65e8d-fc810c37b1bd57ddc5161705e21c8343.png)
 
 ### pulldown_button
 
 [pulldown_button](https://github.com/notDmDrl/pull_down_button) 实现了类似 iOS 下拉菜单的效果，动画效果十分丝滑，如果能支持二级菜单就更完美了。
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/faae1-9ad0cf3582cd7ff590b3e02645f19bc7.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/faae1-9ad0cf3582cd7ff590b3e02645f19bc7.png)
 
 ## 平台特性 {#platform}
 

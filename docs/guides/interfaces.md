@@ -117,7 +117,7 @@ sidebar_position: 4
 
 示例配置：
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/891a6-5de6d34514b48759827b9e08e0236602.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/891a6-5de6d34514b48759827b9e08e0236602.png)
 
 路径替换的作用是当您的音乐服务在 Docker 部署时，识别到的路径可能和音乐文件实际路径是不同的，通过**路径替换**可以将第一个匹配到的字符串替换为 docker 服务可以识别的，即：
 

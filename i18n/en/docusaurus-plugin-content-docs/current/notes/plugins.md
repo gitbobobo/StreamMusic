@@ -16,7 +16,7 @@ If any feature of StreamMusic has helped you, consider giving these projects a ð
 
 [Click here to view](https://macosui.github.io/macos_ui/#/) the live demo.
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/84187-8f40569512f26dedc256e709c73a4de9.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/84187-8f40569512f26dedc256e709c73a4de9.png)
 
 ### fluent_ui
 
@@ -24,13 +24,13 @@ If any feature of StreamMusic has helped you, consider giving these projects a ð
 
 [Click here to view](https://bdlukaa.github.io/fluent_ui/) the live demo.
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/65e8d-fc810c37b1bd57ddc5161705e21c8343.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/65e8d-fc810c37b1bd57ddc5161705e21c8343.png)
 
 ### pulldown_button
 
 [pulldown_button](https://github.com/notDmDrl/pull_down_button) implements iOS-style pull-down menus with smooth animations. It would be perfect if it supported nested menus.
 
-![](https://oss.aqzscn.cn/resource/blog/img/2024/faae1-9ad0cf3582cd7ff590b3e02645f19bc7.png)
+![](https://oss2.aqzscn.cn/resource/blog/img/2024/faae1-9ad0cf3582cd7ff590b3e02645f19bc7.png)
 
 ## Platform Features {#platform}
 
