@@ -8,13 +8,17 @@ Updated: 2025-04-28
 
 :::tip Armor+1
 
-import DayCounter from '@site/src/components/DayCounter';
+You are viewing download links for the public beta version. Please note the following information:
 
-StreamMusic has been released for <DayCounter dateStr="2023-06-06"/> days with 37 updates - still a young player!
+- **Target Audience**: For users who want early access to new features and can tolerate beta version instability.
+- **Update Frequency**: Typically updated weekly, with stable releases published after every 4 beta updates.
+- **Bug Reporting**: Same process as stable versions - submit issues via GitHub.
 
-Due to limited development experience and resources (while supporting multiple platforms & music services), updates and bug fixes may be slower than expected. Your understanding is appreciated.
+If you need to downgrade or encounter operational issues, clean application data as follows:
 
-But I always believe: The next version will be better!
+- **Mobile Devices**: Uninstall the app to remove all data.
+- **macOS**: Manually delete these directories (replace `username` with your actual username): `/Users/username/Library/Application Support/cn.aqzscn.streamMusic/` and `/Users/username/Library/Preferences/cn.aqzscn.streamMusic.plist`
+- **Windows**: Manually delete this directory (replace `username` with your actual username): `C:\Users\username\AppData\Roaming\cn.aqzscn\stream_music`
 
 :::
 
@@ -24,6 +28,39 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.8（developing）
+
+**Update Contents:**
+
+- [Allow exceeding the 500-song queue limit in partial playlist sequential playback](https://github.com/gitbobobo/StreamMusic/issues/772)
+- [Provide deduplication option when adding to playlist](https://github.com/gitbobobo/StreamMusic/issues/923)
+- Support playlist cover interface
+- Support radio station search interface
+- [Allow using basic functions on the playback page when playing radio stations](https://github.com/gitbobobo/StreamMusic/issues/982)
+- [Move volume adjustment button to control bar in desktop version](https://github.com/gitbobobo/StreamMusic/issues/998)
+- [Support adjusting cache location in desktop version](https://github.com/gitbobobo/StreamMusic/issues/1017)
+- [Use estimated duration instead of real-time duration during Subsonic transcoding playback](https://github.com/gitbobobo/StreamMusic/issues/983), where the estimated duration is always a few seconds longer than actual duration
+- [Add volume fade-in/fade-out toggle](https://github.com/gitbobobo/StreamMusic/issues/1014)
+- [Hide QR code scanning entry when device has no camera](https://github.com/gitbobobo/StreamMusic/issues/988)
+- [Hide the "stop after playback" option when playing radio stations](https://github.com/gitbobobo/StreamMusic/issues/1031)
+- [Disable sorting function for daily recommendations](https://github.com/gitbobobo/StreamMusic/issues/1000)
+- Fix jitter issue in Mac status bar lyrics
+- [Fix issue with repeated battery optimization prompts](https://github.com/gitbobobo/StreamMusic/issues/986)
+- [Fix issue where adjusting system time zone affects lyric timeline](https://github.com/gitbobobo/StreamMusic/issues/1028)
+- [Fix issue where album artist is not displayed on Subsonic album page](https://github.com/gitbobobo/StreamMusic/issues/1019)
+- [Fix issue where Emby and Plex cannot sync Last.fm scrobbles](https://github.com/gitbobobo/StreamMusic/issues/894)
+
+android:
+
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.apk
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_arm64-v8a.apk
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_armeabi-v7a.apk
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_x86_64.apk
+
+mac: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/StreamMusic_1.3.8.dmg
+
+windows: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.3.msix
 
 ## V1.3.7（2025-04-28）
 

@@ -4,17 +4,19 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2025-04-29
+:::info
 
-:::tip 护甲+1
+您正在查看公测版本的安装包下载地址，以下信息请您知悉：
 
-import DayCounter from '@site/src/components/DayCounter';
+- 适用人群：想要第一时间体验新功能，可以接受公测版的不稳定性
+- 更新频率：一般一周内更新一次，每更新 4 次左右公测版本会发布正式版本
+- BUG 反馈：与正式版相同，前往 GitHub 提 issue 即可
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 37 个版本，还是个很年轻的播放器呢～
+如需降级软件或软件运行出现问题，可按以下方式清理软件数据:
 
-因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
-
-但我始终相信：下个版本会更好！
+- 移动端卸载软件即可清除软件数据
+- mac 端需要手动删除 `/Users/username/Library/Application Support/cn.aqzscn.streamMusic/` 和 `/Users/godbobo/Library/Preferences/cn.aqzscn.streamMusic.plist`
+- Windows 端需要手动删除 `C:\Users\username\AppData\Roaming\cn.aqzscn\stream_music`
 
 :::
 
@@ -24,6 +26,39 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.8（开发中）
+
+更新内容:
+
+- [部分歌单顺序播放时允许超出 500 首的队列上限](https://github.com/gitbobobo/StreamMusic/issues/772)
+- [添加到歌单时提供去重选项](https://github.com/gitbobobo/StreamMusic/issues/923)
+- 支持歌单封面接口
+- 支持电台搜索接口
+- [播放电台时允许在播放页使用基本功能](https://github.com/gitbobobo/StreamMusic/issues/982)
+- [桌面端音量调整按钮移至控制栏](https://github.com/gitbobobo/StreamMusic/issues/998)
+- [桌面端支持调整缓存位置](https://github.com/gitbobobo/StreamMusic/issues/1017)
+- [subsonic 转码播放时使用预估时长代替实时时长](https://github.com/gitbobobo/StreamMusic/issues/983)，预估时长总会比实际时长多几秒
+- 新增[音量淡入淡出开关](https://github.com/gitbobobo/StreamMusic/issues/1014)
+- [设备没有摄像头时隐藏扫码入口](https://github.com/gitbobobo/StreamMusic/issues/988)
+- [播放电台时隐藏播完停止的选项](https://github.com/gitbobobo/StreamMusic/issues/1031)
+- [禁用每日推荐的排序功能](https://github.com/gitbobobo/StreamMusic/issues/1000)
+- 修复 mac 状态栏歌词抖动问题
+- 修复[电池优化多次提示的问题](https://github.com/gitbobobo/StreamMusic/issues/986)
+- 修复[调整系统时区影响歌词时间轴的问题](https://github.com/gitbobobo/StreamMusic/issues/1028)
+- 修复 [subsonic 专辑页面不显示专辑艺术家的问题](https://github.com/gitbobobo/StreamMusic/issues/1019)
+- 修复 [Emby 和 Plex 无法同步 Last.fm 记录的问题](https://github.com/gitbobobo/StreamMusic/issues/894)
+
+android:
+
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.apk
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_arm64-v8a.apk
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_armeabi-v7a.apk
+- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_x86_64.apk
+
+mac: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/StreamMusic_1.3.8.dmg
+
+windows: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.3.msix
 
 ## V1.3.7（2025-04-28）
 

@@ -31,3 +31,8 @@ Enable Last.FM scrobbling in Navidrome's web interface:
 3. Configure via sidebar settings:
 
 ![](https://oss2.aqzscn.cn/resource/blog/img/2024/58760-e43cba8065b629dfcf3285068d40d7eb.png)
+
+## Reporting Playback History via Plex {#plex}
+
+After configuring **Last.fm authorization** in Plex, you can report playback history (scrobbling). Access the configuration page at:  
+👉 [https://plex.tv/users/other-services](https://plex.tv/users/other-services)

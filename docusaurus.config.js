@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "音流",
+  title: "音流公测版",
   tagline: "连接你的音乐",
   favicon: "img/favicon.ico",
 
