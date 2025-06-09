@@ -20,12 +20,14 @@ Android 一共提供四个安装包，分别对应不同的芯片架构。
 
 ## Windows {#windows}
 
-Windows 版音流目前只提供 x64 架构的 msix 格式安装包，这是微软应用商店的安装格式，因此在商店外安装，需要先在电脑上安装开发者对应的证书。
+推荐直接在[微软应用商店](https://apps.microsoft.com/detail/9ng5zw78qc1s)安装, 在商店外安装，需要先在电脑上安装开发者对应的证书。
 
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 
-<Button variant="contained" startIcon={<DownloadIcon />} href="http://download.aqzscn.cn/stream_music_win.crt">音流证书</Button>
+<Button variant="contained" startIcon={<DownloadIcon />} href="https://download.aqzscn.cn/stream_music_microsoft_store.crt">1.3.8 及以上版本证书</Button>
+
+<Button variant="contained" startIcon={<DownloadIcon />} href="https://download.aqzscn.cn/stream_music_win.crt">低版本证书</Button>
 
 ### 一、标准安装方式 {#standard}
 

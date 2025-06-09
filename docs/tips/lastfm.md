@@ -31,3 +31,7 @@ sidebar_position: 4
 在 Emby 的管理页面中，安装元数据分类的 Last.fm 插件后重启服务器，即可在侧边栏进行配置。
 
 ![](https://oss2.aqzscn.cn/resource/blog/img/2024/58760-e43cba8065b629dfcf3285068d40d7eb.png)
+
+## 通过 Plex 上报播放记录 {#plex}
+
+在 Plex 中配置 Last.fm 授权之后即可上报播放记录，可通过此链接抵达：https://plex.tv/users/other-services

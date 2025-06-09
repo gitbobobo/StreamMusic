@@ -21,12 +21,14 @@ APKs for different architectures **cannot** be installed over each other. Uninst
 
 ## Windows {#windows}
 
-Windows version currently provides only **x64 MSIX** installer (Microsoft Store format). To install outside the Store, you must first install the developer certificate.
+It is recommended to install directly from the [Microsoft Store](https://apps.microsoft.com/detail/9ng5zw78qc1s). For installations outside the store, you need to install the developer certificate on your computer first.
 
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 
-<Button variant="contained" startIcon={<DownloadIcon />} href="https://oss2.aqzscn.cn/stream-music/stream_music_win.crt">Stream Music Certificate</Button>
+<Button variant="contained" startIcon={<DownloadIcon />} href="https://download.aqzscn.cn/stream_music_microsoft_store.crt">Certificate for 1.3.8</Button>
+
+<Button variant="contained" startIcon={<DownloadIcon />} href="https://download.aqzscn.cn/stream_music_win.crt">Certificate for older</Button>
 
 ### Standard Installation {#standard}
 

@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2025-04-29
+更新于：2025-06-09
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 37 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 38 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -25,6 +25,57 @@ import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
 
+## V1.3.8（2025-06-09）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jegk50b">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+
+推荐直接在[微软应用商店](https://apps.microsoft.com/detail/9ng5zw78qc1s)安装，或通过下方按钮手动安装。
+
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/GMnZVZp8">立即下载</Button>
+</div>
+
+:::caution
+
+从 1.3.8 开始，Windows 版本更换了证书文件，若安装失败请查看[安装教程](/docs/guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/asxZVZoH">立即下载</Button>
+</div>
+</TabItem>
+</Tabs>
+
+更新内容:
+
+- [部分歌单顺序播放时允许超出 500 首的队列上限](https://github.com/gitbobobo/StreamMusic/issues/772)
+- [添加到歌单时提供去重选项](https://github.com/gitbobobo/StreamMusic/issues/923)
+- 支持歌单封面接口
+- 支持电台搜索接口
+- [播放电台时允许在播放页使用基本功能](https://github.com/gitbobobo/StreamMusic/issues/982)
+- [桌面端音量调整按钮移至控制栏](https://github.com/gitbobobo/StreamMusic/issues/998)
+- [桌面端支持调整缓存位置](https://github.com/gitbobobo/StreamMusic/issues/1017)
+- [subsonic 转码播放时使用预估时长代替实时时长](https://github.com/gitbobobo/StreamMusic/issues/983)，预估时长总会比实际时长多几秒
+- 新增[音量淡入淡出开关](https://github.com/gitbobobo/StreamMusic/issues/1014)
+- [设备没有摄像头时隐藏扫码入口](https://github.com/gitbobobo/StreamMusic/issues/988)
+- [播放电台时隐藏播完停止的选项](https://github.com/gitbobobo/StreamMusic/issues/1031)
+- [禁用每日推荐的排序功能](https://github.com/gitbobobo/StreamMusic/issues/1000)
+- 修复 mac 状态栏歌词抖动问题
+- 修复[电池优化多次提示的问题](https://github.com/gitbobobo/StreamMusic/issues/986)
+- 修复[调整系统时区影响歌词时间轴的问题](https://github.com/gitbobobo/StreamMusic/issues/1028)
+- 修复 [subsonic 专辑页面不显示专辑艺术家的问题](https://github.com/gitbobobo/StreamMusic/issues/1019)
+- 修复 [Emby 和 Plex 无法同步 Last.fm 记录的问题](https://github.com/gitbobobo/StreamMusic/issues/894)
+
 ## V1.3.7（2025-04-28）
 
 <Tabs groupId="operating-systems">
@@ -35,6 +86,9 @@ import AndroidIcon from '@mui/icons-material/Android';
 </TabItem>
 
 <TabItem value="win" label="Windows">
+
+推荐直接通过微软应用商店安装。
+
 <div class="mv-sm">
     <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CWdZ0MgJ">立即下载</Button>
 </div>

@@ -31,18 +31,15 @@ NAS 是 `家庭云存储` 的简称，如果您尚未听说过，那么音流可
 
 ### iOS {#ios}
 
-点击跳转 [App Store 页面](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496) 或在 App Store 搜索 `音流` 或 `Stream Music`。
+请前往 App Store [产品页](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496)下载使用。
 
-### Android、macOS、Windows {#other-platform}
+### Windows {#windows}
+
+请前往 Microsoft Store [产品页](https://apps.microsoft.com/detail/9ng5zw78qc1s)下载使用。
+
+### Android、macOS {#other-platform}
 
 由于音流暂未上架其他应用商店，请在[此页面](./versions/latest)查找最新版本下载。
-
-:::info
-
-Windows 版安装包是 msix 格式，安装方法[点此](./guides/install)查看。
-
-:::
-
 
 ## 反馈建议 {#feedback}
 
