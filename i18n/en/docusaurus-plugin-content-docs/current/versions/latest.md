@@ -39,7 +39,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 It is recommended to install directly from the [Microsoft Store](https://apps.microsoft.com/detail/9ng5zw78qc1s) or manually via the button below.
 
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/GMnZVZp8">Download</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/sfhZVFga">Download</Button>
 </div>
 
 :::caution

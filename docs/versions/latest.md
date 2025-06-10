@@ -39,7 +39,7 @@ import AndroidIcon from '@mui/icons-material/Android';
 推荐直接在[微软应用商店](https://apps.microsoft.com/detail/9ng5zw78qc1s)安装，或通过下方按钮手动安装。
 
 <div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/GMnZVZp8">立即下载</Button>
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/sfhZVFga">立即下载</Button>
 </div>
 
 :::caution
