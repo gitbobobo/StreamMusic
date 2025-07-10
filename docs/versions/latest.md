@@ -27,7 +27,87 @@ import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
 
-## V1.3.8（开发中）
+## V1.3.9（2025-07-10）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jej3kcj">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+
+推荐直接在[微软应用商店](https://apps.microsoft.com/detail/9ng5zw78qc1s)安装，或通过下方按钮手动安装。
+
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CmZZEtaR">立即下载</Button>
+</div>
+
+:::caution
+
+从 1.3.8 开始，Windows 版本更换了证书文件，若安装失败请查看[安装教程](/docs/guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/G2MZEtCl">立即下载</Button>
+</div>
+:::caution
+
+Mac 端安装此版本前，请先在 Finder 的应用程序中删掉已安装的音流，否则会出现两个音流（新版本重命名为 Musiver.app）。
+
+:::
+</TabItem>
+</Tabs>
+
+- [支持点击歌词行跳转对应歌词](https://github.com/gitbobobo/StreamMusic/issues/847)
+- [专辑列表添加跑马灯效果](https://github.com/gitbobobo/StreamMusic/issues/1047)
+- [优化无网络状态的使用体验](https://github.com/gitbobobo/StreamMusic/issues/1086)
+- [支持 Navidrome 副标题属性](https://github.com/gitbobobo/StreamMusic/issues/1048)
+- 支持删除 Navidrome 的丢失文件
+- 支持 OpenSubsonic 获取同步歌词的接口
+- 支持 emby 有声读物专辑继续播放功能
+- [添加到歌单时仅管理员身份可显示共享歌单](https://github.com/gitbobobo/StreamMusic/issues/1069)
+- [桌面端音量调节滑块可实时生效](https://github.com/gitbobobo/StreamMusic/issues/1062)
+- [桌面端支持添加到播放队列](https://github.com/gitbobobo/StreamMusic/issues/1015)
+- [TV 端支持播放电台](https://github.com/gitbobobo/StreamMusic/issues/1081)
+- 修复 [Windows 端多次启动音流时无法激活当前窗口的问题](https://github.com/gitbobobo/StreamMusic/issues/1070)
+- 修复 [Windows 端动态库冲突问题](https://github.com/gitbobobo/StreamMusic/issues/1068)
+- 修复 [Windows 端切换语言前后字体不一致的问题](https://github.com/gitbobobo/StreamMusic/issues/1077)
+
+## V1.3.8（2025-06-09）
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jegk50b">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+
+推荐直接在[微软应用商店](https://apps.microsoft.com/detail/9ng5zw78qc1s)安装，或通过下方按钮手动安装。
+
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/sfhZVFga">立即下载</Button>
+</div>
+
+:::caution
+
+从 1.3.8 开始，Windows 版本更换了证书文件，若安装失败请查看[安装教程](/docs/guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/asxZVZoH">立即下载</Button>
+</div>
+</TabItem>
+</Tabs>
 
 更新内容:
 
@@ -49,17 +129,6 @@ import AndroidIcon from '@mui/icons-material/Android';
 - 修复 [subsonic 专辑页面不显示专辑艺术家的问题](https://github.com/gitbobobo/StreamMusic/issues/1019)
 - 修复 [Emby 和 Plex 无法同步 Last.fm 记录的问题](https://github.com/gitbobobo/StreamMusic/issues/894)
 
-android:
-
-- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.apk
-- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_arm64-v8a.apk
-- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_armeabi-v7a.apk
-- https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8_x86_64.apk
-
-mac: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/StreamMusic_1.3.8.dmg
-
-windows: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.3.msix
-
 ## V1.3.7（2025-04-28）
 
 <Tabs groupId="operating-systems">
@@ -70,6 +139,9 @@ windows: https://oss2.aqzscn.cn/stream-music/versions/1.3.8/stream_music_1.3.8.3
 </TabItem>
 
 <TabItem value="win" label="Windows">
+
+推荐直接通过微软应用商店安装。
+
 <div class="mv-sm">
     <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CWdZ0MgJ">立即下载</Button>
 </div>

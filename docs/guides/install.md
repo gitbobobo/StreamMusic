@@ -25,7 +25,9 @@ Windows 版音流目前只提供 x64 架构的 msix 格式安装包，这是微�
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 
-<Button variant="contained" startIcon={<DownloadIcon />} href="http://download.aqzscn.cn/stream_music_win.crt">音流证书</Button>
+<Button variant="contained" startIcon={<DownloadIcon />} href="https://download.aqzscn.cn/stream_music_microsoft_store.crt">1.3.8 及以上版本证书</Button>
+
+<Button variant="contained" startIcon={<DownloadIcon />} href="https://download.aqzscn.cn/stream_music_win.crt">低版本证书</Button>
 
 ### 一、标准安装方式 {#standard}
 
