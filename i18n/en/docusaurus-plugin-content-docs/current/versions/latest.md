@@ -40,6 +40,13 @@ This upcoming version involves extensive modifications and is expected to take 2
 <div class="mv-sm">
     <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jej3kcj">Download Now</Button>
 </div>
+
+
+:::caution
+
+If you previously installed a non-universal build, you must uninstall and reinstall for this update. (The latest Flutter version fixes inconsistent build numbers across different architecture packages, but this prevents direct upgrades from previous versions.)
+
+:::
 </TabItem>
 
 <TabItem value="win" label="Windows">

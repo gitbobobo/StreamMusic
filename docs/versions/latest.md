@@ -40,6 +40,13 @@ import AndroidIcon from '@mui/icons-material/Android';
 <div class="mv-sm">
     <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jej3kcj">立即下载</Button>
 </div>
+
+
+:::caution
+
+如果之前安装的不是通用版本，此次更新时需要卸载重装（Flutter 最新版本修复了不同架构安装包 build number 不一致的问题，但会导致旧版本无法直接升级）
+
+:::
 </TabItem>
 
 <TabItem value="win" label="Windows">
