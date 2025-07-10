@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # 最新版本
 
-更新于：2025-06-09
+更新于：2025-07-10
 
 :::tip 护甲+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 38 个版本，还是个很年轻的播放器呢～
+音流发布至今已有 <DayCounter dateStr="2023-06-06"/> 天了，共更新了 39 个版本，还是个很年轻的播放器呢～
 
 因个人开发经验与精力所限，且要兼顾多个平台与音乐服务，更新速度与 bug 解决速度难免要慢一些，望诸君见谅。
 
@@ -24,6 +24,65 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.9（2025-07-10）
+
+:::tip 活动预告
+
+音流 1.3.x 系列版本已开发完成，按照惯例，将于 1.4.0 版本发布时开始为期两周的优惠活动（降价 10 元）。
+
+新版本涉及大量改动，预计需要两到三个月的时间（也可能更久，不做保证）进行开发，对此活动感兴趣，不想错过时间的用户可以关注微信公众号：`音流 - 连接你的音乐` 以接收最新消息。
+
+:::
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jej3kcj">立即下载</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+
+推荐直接在[微软应用商店](https://apps.microsoft.com/detail/9ng5zw78qc1s)安装，或通过下方按钮手动安装。
+
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CmZZEtaR">立即下载</Button>
+</div>
+
+:::caution
+
+从 1.3.8 开始，Windows 版本更换了证书文件，若安装失败请查看[安装教程](/docs/guides/install)
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/G2MZEtCl">立即下载</Button>
+</div>
+:::caution
+
+Mac 端安装此版本前，请先在 Finder 的应用程序中删掉已安装的音流，否则会出现两个音流（新版本重命名为 Musiver.app）。
+
+:::
+</TabItem>
+</Tabs>
+
+- [支持点击歌词行跳转对应歌词](https://github.com/gitbobobo/StreamMusic/issues/847)
+- [专辑列表添加跑马灯效果](https://github.com/gitbobobo/StreamMusic/issues/1047)
+- [优化无网络状态的使用体验](https://github.com/gitbobobo/StreamMusic/issues/1086)
+- [支持 Navidrome 副标题属性](https://github.com/gitbobobo/StreamMusic/issues/1048)
+- 支持删除 Navidrome 的丢失文件
+- 支持 OpenSubsonic 获取同步歌词的接口
+- 支持 emby 有声读物专辑继续播放功能
+- [添加到歌单时仅管理员身份可显示共享歌单](https://github.com/gitbobobo/StreamMusic/issues/1069)
+- [桌面端音量调节滑块可实时生效](https://github.com/gitbobobo/StreamMusic/issues/1062)
+- [桌面端支持添加到播放队列](https://github.com/gitbobobo/StreamMusic/issues/1015)
+- [TV 端支持播放电台](https://github.com/gitbobobo/StreamMusic/issues/1081)
+- 修复 [Windows 端多次启动音流时无法激活当前窗口的问题](https://github.com/gitbobobo/StreamMusic/issues/1070)
+- 修复 [Windows 端动态库冲突问题](https://github.com/gitbobobo/StreamMusic/issues/1068)
+- 修复 [Windows 端切换语言前后字体不一致的问题](https://github.com/gitbobobo/StreamMusic/issues/1077)
 
 ## V1.3.8（2025-06-09）
 

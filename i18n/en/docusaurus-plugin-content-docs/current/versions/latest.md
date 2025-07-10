@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # Latest
 
-Updated: 2025-06-09
+Updated: 2025-07-10
 
 :::tip Armor+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-StreamMusic has been released for <DayCounter dateStr="2023-06-06"/> days with 38 updates - still a young player!
+StreamMusic has been released for <DayCounter dateStr="2023-06-06"/> days with 39 updates - still a young player!
 
 Due to limited development experience and resources (while supporting multiple platforms & music services), updates and bug fixes may be slower than expected. Your understanding is appreciated.
 
@@ -24,6 +24,66 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+
+## V1.3.9 (2025-07-10)
+
+:::tip Activity Notice
+
+The Musiver 1.3.x series development is complete. As per our convention, a two-week promotional campaign (¥10 price reduction) will begin upon the release of version 1.4.0.
+
+This upcoming version involves extensive modifications and is expected to take 2-3 months (possibly longer, no guarantees) to develop. Users interested in this promotion who wish to receive timely updates should follow our WeChat Official Account: `音流 - 连接你的音乐`.
+
+:::
+
+<Tabs groupId="operating-systems">
+<TabItem value="android" label="Android">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jej3kcj">Download Now</Button>
+</div>
+</TabItem>
+
+<TabItem value="win" label="Windows">
+
+Recommended to install via [Microsoft Store](https://apps.microsoft.com/detail/9ng5zw78qc1s), or manually install using the button below.
+
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CmZZEtaR">Download Now</Button>
+</div>
+
+:::caution
+
+Since v1.3.8, the Windows version uses a new certificate file. If installation fails, please check the [Installation Guide](/docs/guides/install).
+
+:::
+</TabItem>
+
+<TabItem value="mac" label="macOS">
+<div class="mv-sm">
+    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/G2MZEtCl">Download Now</Button>
+</div>
+
+:::caution
+
+Before installing this version on macOS, please delete the existing Musiver app in Finder's Applications folder. Otherwise, two instances will appear (the new version is renamed Musiver.app).
+
+:::
+</TabItem>
+</Tabs>
+
+- [Added click-to-jump functionality for lyric lines](https://github.com/gitbobobo/StreamMusic/issues/847)
+- [Implemented marquee effect for album lists](https://github.com/gitbobobo/StreamMusic/issues/1047)
+- [Optimized offline user experience](https://github.com/gitbobobo/StreamMusic/issues/1086)
+- [Added support for Navidrome's subtitle property](https://github.com/gitbobobo/StreamMusic/issues/1048)
+- Added support for deleting missing files in Navidrome
+- Added OpenSubsonic API support for fetching synchronized lyrics
+- Added continued playback support for Emby audiobook albums
+- [Only administrators can see shared playlists when adding songs](https://github.com/gitbobobo/StreamMusic/issues/1069)
+- [Desktop volume slider now applies changes in real-time](https://github.com/gitbobobo/StreamMusic/issues/1062)
+- [Desktop version now supports adding to playback queue](https://github.com/gitbobobo/StreamMusic/issues/1015)
+- [TV version now supports radio playback](https://github.com/gitbobobo/StreamMusic/issues/1081)
+- Fixed: [Windows activation issue when launching multiple instances](https://github.com/gitbobobo/StreamMusic/issues/1070)
+- Fixed: [Dynamic library conflicts on Windows](https://github.com/gitbobobo/StreamMusic/issues/1068)
+- Fixed: [Inconsistent fonts after language switching on Windows](https://github.com/gitbobobo/StreamMusic/issues/1077)
 
 ## V1.3.8（2025-06-09）
 
