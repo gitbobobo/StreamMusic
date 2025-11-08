@@ -18,3 +18,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Crawler outputs
+/crawlers/*_programs.json
+/crawlers/*_programs.md
+/crawlers/__pycache__
+/crawlers/*.pyc
