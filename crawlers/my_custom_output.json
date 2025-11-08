@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "name": "示例节目",
+    "description": "这是一个示例",
+    "create_time": "2025-01-01 12:00:00",
+    "duration": 1800,
+    "duration_formatted": "30:00",
+    "listen_count": 1000,
+    "like_count": 50,
+    "comment_count": 10,
+    "audio_url": "https://example.com/audio.mp3",
+    "cover_url": "https://example.com/cover.jpg"
+  }
+]
